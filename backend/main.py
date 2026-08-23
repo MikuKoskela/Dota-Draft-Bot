@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import List
 
 import dota_analyzer
@@ -12,14 +12,15 @@ app = FastAPI(
 )
 
 
-# --------------------------------------------------
+# ==================================================
 # CORS
-# --------------------------------------------------
+# ==================================================
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173"
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -27,18 +28,18 @@ app.add_middleware(
 )
 
 
-# --------------------------------------------------
+# ==================================================
 # REQUEST MODELS
-# --------------------------------------------------
+# ==================================================
 
 class AnalyzeRequest(BaseModel):
-    enemy_team: List[str]
-    own_team: List[str] = []
+    enemy_team: List[str] = Field(default_factory=list)
+    own_team: List[str] = Field(default_factory=list)
 
 
-# --------------------------------------------------
+# ==================================================
 # BASIC ROUTE
-# --------------------------------------------------
+# ==================================================
 
 @app.get("/")
 def root():
@@ -47,27 +48,33 @@ def root():
     }
 
 
-# --------------------------------------------------
+# ==================================================
 # GET ALL HEROES
-# --------------------------------------------------
+# ==================================================
 
 @app.get("/api/heroes")
 def get_heroes():
-    heroes = dota_analyzer.hero_df["localized_name"].tolist()
+
+    heroes = (
+        dota_analyzer.hero_df["localized_name"]
+        .dropna()
+        .tolist()
+    )
 
     return {
         "heroes": heroes
     }
 
 
-# --------------------------------------------------
-# HERO SEARCH / AUTOCOMPLETE
-# --------------------------------------------------
+# ==================================================
+# HERO SEARCH
+# ==================================================
 
 @app.get("/api/heroes/search")
 def search_heroes(
     q: str = Query(..., min_length=1)
 ):
+
     results = dota_analyzer.suggest_hero_input(
         dota_analyzer.hero_df,
         q
@@ -79,9 +86,9 @@ def search_heroes(
     }
 
 
-# --------------------------------------------------
+# ==================================================
 # ANALYZE DRAFT
-# --------------------------------------------------
+# ==================================================
 
 @app.post("/api/analyze")
 def analyze_draft(request: AnalyzeRequest):
@@ -89,9 +96,9 @@ def analyze_draft(request: AnalyzeRequest):
     enemy_team = request.enemy_team
     own_team = request.own_team
 
-    # ----------------------------------------------
-    # Validation
-    # ----------------------------------------------
+    # --------------------------------------------------
+    # BASIC VALIDATION
+    # --------------------------------------------------
 
     if not enemy_team:
         raise HTTPException(
@@ -105,27 +112,33 @@ def analyze_draft(request: AnalyzeRequest):
             detail="Enemy team cannot contain more than 5 heroes."
         )
 
-    if len(own_team) > 5:
+    if len(own_team) > 4:
         raise HTTPException(
             status_code=400,
-            detail="Own team cannot contain more than 5 heroes."
+            detail="Own team cannot contain more than 4 heroes."
         )
 
-    # ----------------------------------------------
-    # Validate hero names
-    # ----------------------------------------------
+    all_selected = enemy_team + own_team
+
+    if len(all_selected) != len(set(all_selected)):
+        raise HTTPException(
+            status_code=400,
+            detail="A hero cannot be selected more than once."
+        )
 
     valid_heroes = set(
         dota_analyzer.hero_df["localized_name"]
     )
 
     invalid_enemy = [
-        hero for hero in enemy_team
+        hero
+        for hero in enemy_team
         if hero not in valid_heroes
     ]
 
     invalid_own = [
-        hero for hero in own_team
+        hero
+        for hero in own_team
         if hero not in valid_heroes
     ]
 
@@ -138,19 +151,19 @@ def analyze_draft(request: AnalyzeRequest):
             }
         )
 
-    # ----------------------------------------------
-    # Get matchup data
-    # ----------------------------------------------
-
     matchup_cache = (
         dota_analyzer.build_enemy_matchup_cache(
             enemy_team
         )
     )
 
-    # ----------------------------------------------
-    # General recommendations
-    # ----------------------------------------------
+    position_names = {
+        1: "Carry",
+        2: "Mid",
+        3: "Offlane",
+        4: "Soft Support",
+        5: "Hard Support",
+    }
 
     general_picks = (
         dota_analyzer.get_general_top_picks(
@@ -161,17 +174,17 @@ def analyze_draft(request: AnalyzeRequest):
         )
     )
 
-    # ----------------------------------------------
-    # Position recommendations
-    # ----------------------------------------------
+    general_results = []
 
-    position_names = {
-        1: "Carry",
-        2: "Mid",
-        3: "Offlane",
-        4: "Soft Support",
-        5: "Hard Support"
-    }
+    for hero, position, score_data in general_picks:
+
+        general_results.append({
+            "hero": hero,
+            "position": position,
+            "position_name": position_names[position],
+            "score": score_data
+        })
+
 
     position_results = {}
 
@@ -197,27 +210,11 @@ def analyze_draft(request: AnalyzeRequest):
             for hero, score_data in picks
         ]
 
-    # ----------------------------------------------
-    # General results
-    # ----------------------------------------------
-
-    general_results = [
-        {
-            "hero": hero,
-            "position": position,
-            "position_name": position_names[position],
-            "score": score_data
-        }
-        for hero, position, score_data in general_picks
-    ]
-
-    # ----------------------------------------------
-    # Return JSON
-    # ----------------------------------------------
 
     return {
         "enemy_team": enemy_team,
         "own_team": own_team,
+
         "recommendations": {
             "general": general_results,
             "positions": position_results

@@ -2015,15 +2015,15 @@ def show_score_explanation(
 #    # VIHOLLISEN PICKIT
 #    # ========================================================
 #
-#    enemy_team = get_team_interactive(
-#
-#        hero_df,
-#
-#        "Vihollinen",
-#
-#        max_heroes=5
-#
-#    )
+    enemy_team = get_team_interactive(
+
+        hero_df,
+
+       "Vihollinen",
+
+        max_heroes=5
+
+    )
 #
 #    if not enemy_team:
 #
@@ -2086,11 +2086,11 @@ def show_score_explanation(
 #    # HAE MATCHUP DATA VAIN KERRAN
 #    # ========================================================
 #
-#    matchup_cache = build_enemy_matchup_cache(
-#
-#        enemy_team
-#
-#    )
+    matchup_cache = build_enemy_matchup_cache(
+
+        enemy_team
+
+   )
 #
 #
 #    # ========================================================

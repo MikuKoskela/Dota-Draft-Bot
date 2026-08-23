@@ -78,6 +78,22 @@ button {
     background: #3b4c67;
 }
 
+@layer utilities{
+    .animate-in{
+        animation-fill-mode: both;
+    }
+    .duration-300{
+        animation-duration: 300ms;
+    }
+        
+    .duration-1500{
+        animation-duration: 300ms;
+    }
+    .duration-0{
+        animation-duration: 0ms;
+    }
+
+}
 @keyframes fadeIn {
     from {
         opacity: 0;

@@ -1,3 +1,6 @@
+import { useEffect, useState } from "react";
+import { getHeroMap } from "../api/dotaApi";
+import { heroData } from "../data/heroData.Js";
 export default function HeroCard({
     hero,
     variant = "default",
@@ -6,7 +9,7 @@ export default function HeroCard({
 }) {
     const isEmpty = !hero;
 
-    if (isEmpty) {
+        if (isEmpty) {
         return (
             <div
                 className="
@@ -37,9 +40,21 @@ export default function HeroCard({
             </div>
         );
     }
+    const [heroMap, setHeroMap] = useState({});
 
     const isRecommendation = variant === "recommendation";
+   
+    useEffect(() => {
+        getHeroMap().then(setHeroMap);
+    }, []);
 
+const heroInfo = Object.values(heroData).find(
+    (heroDataItem) => heroDataItem.displayName === hero
+);
+if (!heroInfo) {
+    console.log("Hero not found:", hero);
+    return <div>Loading...</div>;
+}
     return (
         <div
             className={`
@@ -81,15 +96,19 @@ export default function HeroCard({
             >
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(59,130,246,0.22),transparent_45%)]" />
 
-                <div className="relative px-2 text-center">
-                    <div className="mb-2 text-[10px] uppercase tracking-[0.2em] text-slate-500">
-                        Hero image
-                    </div>
+              {/* Hero image background */}
+            <div className="absolute inset-0">
+                <img
+                    src={`${heroInfo.image}`}
+                    alt={heroInfo.displayName}
+                    className="absolute inset-0 h-full w-full object-cover"
+                />
+                {/* Blue/dark overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-slate-900/30 via-slate-900/40 to-slate-950/80" />
 
-                    <div className="text-sm font-bold text-slate-200 sm:text-base">
-                        {hero}
-                    </div>
-                </div>
+                {/* Optional radial effect */}
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(59,130,246,0.22),transparent_45%)]" />
+            </div>
             </div>
 
             {/* Bottom gradient */}
@@ -97,9 +116,9 @@ export default function HeroCard({
 
             {/* Hero name */}
             <div className="absolute inset-x-0 bottom-0 p-2 sm:p-3">
-                <p className="truncate text-xs font-bold text-white sm:text-sm">
-                    {hero}
-                </p>
+           <p className="truncate text-xs font-bold text-white sm:text-sm">
+            {heroInfo.displayName}
+            </p>
             </div>
 
             {/* Remove button */}

@@ -4,73 +4,123 @@ export default function Team({
     title,
     heroes,
     onRemove,
-    side = "enemy",
+    enemy = false,
+    maxHeroes,
 }) {
-    const isEnemy = side === "enemy";
-
     const slots = Array.from(
-        { length: 5 },
+        { length: maxHeroes },
         (_, index) => heroes[index] ?? null
     );
 
     return (
         <section
-            className="
-                w-full
+            className={`
+                relative
+                overflow-hidden
                 rounded-2xl
                 border
-                border-slate-800
-                bg-slate-950/70
+                ${
+                    enemy
+                        ? "border-red-500/50 bg-red-950/[0.08]"
+                        : "border-blue-500/50 bg-blue-950/[0.08]"
+                }
                 p-3
-                shadow-xl
-                backdrop-blur
+                shadow-2xl
+                backdrop-blur-xl
                 transition-all
                 duration-500
                 sm:p-4
                 lg:p-5
-            "
+            `}
         >
-            {/* Team header */}
-            <div className="mb-3 flex items-center justify-between sm:mb-4">
-                <div className="flex items-center gap-2">
-                    <span
+            <div
+                className={`
+                    pointer-events-none
+                    absolute
+                    -top-20
+                    ${
+                        enemy
+                            ? "-left-20 bg-red-500/10"
+                            : "-right-20 bg-blue-500/10"
+                    }
+                    h-40
+                    w-40
+                    rounded-full
+                    blur-3xl
+                `}
+            />
+
+            <div className="relative mb-4 flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                    <div
                         className={`
-                            h-2.5
-                            w-2.5
-                            rounded-full
+                            flex
+                            h-8
+                            w-8
+                            items-center
+                            justify-center
+                            rounded-lg
                             ${
-                                isEnemy
-                                    ? "bg-red-500 shadow-[0_0_12px_rgba(239,68,68,0.7)]"
-                                    : "bg-blue-500 shadow-[0_0_12px_rgba(59,130,246,0.7)]"
+                                enemy
+                                    ? "bg-red-500/10 text-red-400"
+                                    : "bg-blue-500/10 text-blue-400"
                             }
                         `}
-                    />
+                    >
+                        {enemy ? "⚔" : "🛡"}
+                    </div>
 
-                    <h2 className="text-sm font-bold tracking-wide text-slate-100 sm:text-base">
-                        {title}
-                    </h2>
+                    <div>
+                        <h2 className="text-sm font-black uppercase tracking-wider text-white sm:text-base">
+                            {title}
+                        </h2>
+
+                        <p className="text-[9px] text-slate-600">
+                            {enemy
+                                ? "Opposing lineup"
+                                : "Your lineup"}
+                        </p>
+                    </div>
                 </div>
 
-                <span className="text-xs text-slate-500">
-                    {heroes.length}/5
+                <span
+                    className={`
+                        text-xs
+                        font-black
+                        ${
+                            enemy
+                                ? "text-red-400"
+                                : "text-blue-400"
+                        }
+                    `}
+                >
+                    {heroes.length} / {maxHeroes}
                 </span>
             </div>
 
-            {/* Heroes */}
             <div
-                className="
+                className={`
+                    relative
                     grid
-                    grid-cols-5
                     gap-1.5
                     sm:gap-2
-                    lg:gap-3
-                "
+                    ${
+                        maxHeroes === 4
+                            ? "grid-cols-4"
+                            : "grid-cols-5"
+                    }
+                `}
             >
                 {slots.map((hero, index) => (
                     <HeroCard
                         key={`${hero ?? "empty"}-${index}`}
                         hero={hero}
-                        onRemove={hero ? onRemove : undefined}
+                        enemy={enemy}
+                        onRemove={
+                            hero
+                                ? onRemove
+                                : undefined
+                        }
                     />
                 ))}
             </div>

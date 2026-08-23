@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { searchHeroes } from "../services/api";
+import { searchHeroes } from "../api/api";
 
 export default function HeroSearch({
     selectedHeroes = [],
@@ -27,9 +27,16 @@ export default function HeroSearch({
 
                 const data = await searchHeroes(query);
 
-                const filtered = data.heroes.filter(
-                    (hero) => !selectedHeroes.includes(hero)
+                const heroIds = data.heroes.map((hero) =>
+                typeof hero === "string"
+                    ? hero
+                    : hero.name
+                );  
+                const filtered = heroIds.filter(
+                    (heroId) => !selectedHeroes.includes(heroId)
                 );
+
+setSuggestions(filtered);
 
                 setSuggestions(filtered);
             } catch (err) {

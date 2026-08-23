@@ -36,10 +36,17 @@ export async function analyzeDraft(enemyTeam, ownTeam) {
         })
     });
 
-    if (!response.ok) {
-        const error = await response.json();
-        throw new Error(error.detail || "Analysis failed");
-    }
+   if (!response.ok) {
+    const error = await response.json();
+
+    console.error("Backend error:", error);
+
+    throw new Error(
+        typeof error.detail === "string"
+            ? error.detail
+            : JSON.stringify(error.detail)
+    );
+}
 
     return response.json();
 }

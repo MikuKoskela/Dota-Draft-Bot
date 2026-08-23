@@ -4,8 +4,11 @@ import HeroSearch from "../components/HeroSearch";
 import Team from "../components/Team";
 import RecommendationCard from "../components/RecommendationCard";
 
-import { analyzeDraft } from "../services/api";
+import { analyzeDraft } from "../api/api";
+import HeroGrid from "../components/HeroGrid";
 
+const MAX_ENEMY_HEROES = 5;
+const MAX_OWN_HEROES = 4;
 const positions = [
     {
         id: "1",
@@ -51,35 +54,43 @@ export default function DraftPage() {
         [enemyTeam, ownTeam]
     );
 
-    function addEnemyHero(hero) {
-        if (enemyTeam.length >= 5) return;
-
-        if (allSelectedHeroes.includes(hero)) {
-            return;
+function addEnemyHero(hero) {
+    setEnemyTeam((current) => {
+        if (typeof hero !== "string") {
+        console.error("Expected hero ID string, got:", hero);
+        return;
+    }
+        if (current.length >= MAX_ENEMY_HEROES) {
+            return current;
         }
 
-        setEnemyTeam((current) => [
-            ...current,
-            hero,
-        ]);
-
-        setAnalysis(null);
-    }
-
-    function addOwnHero(hero) {
-        if (ownTeam.length >= 5) return;
-
-        if (allSelectedHeroes.includes(hero)) {
-            return;
+        if (current.includes(hero) || ownTeam.includes(hero)) {
+            return current;
         }
 
-        setOwnTeam((current) => [
-            ...current,
-            hero,
-        ]);
+        setAnalysis(null);
+        return [...current, hero];
+    });
+}
+
+function addOwnHero(hero) {
+    setOwnTeam((current) => {
+        if (typeof hero !== "string") {
+        console.error("Expected hero ID string, got:", hero);
+        return;
+    }
+        if (current.length >= MAX_OWN_HEROES) {
+            return current;
+        }
+
+        if (current.includes(hero) || enemyTeam.includes(hero)) {
+            return current;
+        }
 
         setAnalysis(null);
-    }
+        return [...current, hero];
+    });
+}
 
     function removeEnemyHero(hero) {
         setEnemyTeam((current) =>
@@ -336,6 +347,7 @@ export default function DraftPage() {
                                 heroes={enemyTeam}
                                 onRemove={removeEnemyHero}
                                 side="enemy"
+                                maxHeroes={MAX_ENEMY_HEROES}
                             />
 
                             <div className="mt-3">
@@ -348,7 +360,7 @@ export default function DraftPage() {
                                     }
                                     disabled={
                                         enemyTeam.length >=
-                                        5
+                                        MAX_ENEMY_HEROES
                                     }
                                 />
                             </div>
@@ -400,6 +412,7 @@ export default function DraftPage() {
                                 heroes={ownTeam}
                                 onRemove={removeOwnHero}
                                 side="own"
+                                maxHeroes={MAX_OWN_HEROES}
                             />
 
                             <div className="mt-3">
@@ -410,7 +423,7 @@ export default function DraftPage() {
                                     onSelect={addOwnHero}
                                     disabled={
                                         ownTeam.length >=
-                                        5
+                                        MAX_OWN_HEROES
                                     }
                                 />
                             </div>
@@ -440,9 +453,9 @@ export default function DraftPage() {
                             </p>
 
                             <p className="mt-1 text-[10px] text-slate-600">
-                                {enemyTeam.length}/5
+                                {enemyTeam.length}/{MAX_ENEMY_HEROES}
                                 enemy picks ·{" "}
-                                {ownTeam.length}/5
+                                {ownTeam.length}/{MAX_OWN_HEROES}
                                 friendly picks
                             </p>
                         </div>
@@ -502,6 +515,22 @@ export default function DraftPage() {
                         </div>
                     )}
                 </section>
+                
+                {/*Heroes*/}
+                <section
+                    className="
+                        mt-8
+                        transition-all
+                        duration-500
+                        sm:mt-10
+                    "
+                >
+                    <HeroGrid addOwnHero={addOwnHero} addEnemyHero={addEnemyHero} />
+                    
+                </section>
+
+
+
 
                 {/* Results */}
                 <section
