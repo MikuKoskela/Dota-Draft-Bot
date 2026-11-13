@@ -51,6 +51,7 @@ export default function DraftPage() {
     const [loadingRoster, setLoadingRoster] = useState(true);
     const [error, setError] = useState("");
     const [profileModal, setProfileModal] = useState(null);
+    const [activeSelection, setActiveSelection] = useState(null);
 
     useEffect(() => {
         Promise.all([getHeroes(), getMeta()])
@@ -70,35 +71,43 @@ export default function DraftPage() {
         [enemyTeam, ownTeam]
     );
     const enemyPicksComplete = selectedCount(enemyTeam) === MAX_ENEMY_HEROES;
-    const activeSelectionSide = enemyPicksComplete ? "own" : "enemy";
-    const activeSelectionRole = positions.find(({ id }) =>
-        !(activeSelectionSide === "enemy" ? enemyTeam[id] : ownTeam[id])
-    )?.id ?? null;
     const roleConfidenceFloor = meta?.role_min_confidence ?? 0.45;
 
-    function addEnemyHero(hero) {
-        const nextPosition = positions.find(({ id }) => !enemyTeam[id]);
-        if (!nextPosition) return;
-        if (allSelectedHeroes.includes(hero)) return;
-        setEnemyTeam((current) => ({ ...current, [nextPosition.id]: hero }));
-        setAnalysis(null);
+    function selectPosition(side, position) {
+        const team = side === "enemy" ? enemyTeam : ownTeam;
+        const maxHeroes = side === "enemy" ? MAX_ENEMY_HEROES : MAX_OWN_HEROES;
+        if (team[position] || selectedCount(team) >= maxHeroes) return;
+        setActiveSelection({ side, position });
         setError("");
     }
 
-    function addOwnHero(hero) {
-        if (!enemyPicksComplete) {
-            setError("Complete all five enemy picks before selecting your team.");
-            return;
-        }
-        const nextPosition = positions.find(({ id }) => !ownTeam[id]);
-        if (!nextPosition || selectedCount(ownTeam) >= MAX_OWN_HEROES) return;
+    function addHero(hero) {
+        if (!activeSelection) return;
         if (allSelectedHeroes.includes(hero)) return;
-        const updatedTeam = { ...ownTeam, [nextPosition.id]: hero };
-        setOwnTeam(updatedTeam);
+        const { side, position } = activeSelection;
+        const team = side === "enemy" ? enemyTeam : ownTeam;
+        const maxHeroes = side === "enemy" ? MAX_ENEMY_HEROES : MAX_OWN_HEROES;
+        if (team[position] || selectedCount(team) >= maxHeroes) return;
+
+        const updatedTeam = { ...team, [position]: hero };
+        if (side === "enemy") {
+            setEnemyTeam(updatedTeam);
+        } else {
+            setOwnTeam(updatedTeam);
+        }
+        setActiveSelection(null);
         setAnalysis(null);
         setError("");
-        if (selectedCount(updatedTeam) === MAX_OWN_HEROES) {
-            requestFinalPick(updatedTeam, enemyTeam, DEFAULT_DRAFT_PHASE);
+        if (
+            (side === "own" && selectedCount(updatedTeam) === MAX_OWN_HEROES && enemyPicksComplete)
+            || (side === "enemy" && selectedCount(updatedTeam) === MAX_ENEMY_HEROES
+                && selectedCount(ownTeam) === MAX_OWN_HEROES)
+        ) {
+            requestFinalPick(
+                side === "own" ? updatedTeam : ownTeam,
+                side === "enemy" ? updatedTeam : enemyTeam,
+                DEFAULT_DRAFT_PHASE
+            );
         }
     }
 
@@ -109,6 +118,7 @@ export default function DraftPage() {
                 currentHero === hero ? null : currentHero,
             ])
         ));
+        setActiveSelection(null);
         setAnalysis(null);
     }
 
@@ -119,12 +129,14 @@ export default function DraftPage() {
                 currentHero === hero ? null : currentHero,
             ])
         ));
+        setActiveSelection(null);
         setAnalysis(null);
     }
 
     function resetDraft() {
         setEnemyTeam(emptyTeam());
         setOwnTeam(emptyTeam());
+        setActiveSelection(null);
         setAnalysis(null);
         setError("");
         setProfileModal(null);
@@ -324,7 +336,7 @@ export default function DraftPage() {
                             sm:text-sm
                         "
                     >
-                        Fill the enemy lineup first. The eligible hero pool advances through positions automatically, then ranks your final pick after four friendly picks.
+                        Choose any open position on either team, then pick a hero that fits that role. Your final pick is ranked after four heroes are selected for your team and all five enemy positions are filled.
                     </p>
                 </section>
 
@@ -379,6 +391,8 @@ export default function DraftPage() {
                                 title="Enemy Team"
                                 heroes={enemyTeam}
                                 onRemove={removeEnemyHero}
+                                onSelectPosition={(position) => selectPosition("enemy", position)}
+                                selectedPosition={activeSelection?.side === "enemy" ? activeSelection.position : null}
                                 side="enemy"
                                 maxHeroes={MAX_ENEMY_HEROES}
                             />
@@ -429,14 +443,11 @@ export default function DraftPage() {
                                 title="Your Team"
                                 heroes={ownTeam}
                                 onRemove={removeOwnHero}
+                                onSelectPosition={(position) => selectPosition("own", position)}
+                                selectedPosition={activeSelection?.side === "own" ? activeSelection.position : null}
                                 side="own"
                                 maxHeroes={MAX_OWN_HEROES}
                             />
-                            {!enemyPicksComplete && (
-                                <p className="mt-2 text-[10px] text-amber-400/80">
-                                    Fill enemy positions in order to unlock your four picks.
-                                </p>
-                            )}
                         </div>
                     </div>
 
@@ -545,11 +556,11 @@ export default function DraftPage() {
                     ) : (
                         <HeroGrid
                             heroes={heroes}
-                            position={activeSelectionRole}
-                            side={activeSelectionSide}
+                            position={activeSelection?.position}
+                            side={activeSelection?.side}
                             selectedHeroes={allSelectedHeroes}
                             minRoleConfidence={roleConfidenceFloor}
-                            onSelect={activeSelectionSide === "enemy" ? addEnemyHero : addOwnHero}
+                            onSelect={addHero}
                         />
                     )}
                 </section>

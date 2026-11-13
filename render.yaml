@@ -8,4 +8,4 @@ services:
     healthCheckPath: /
     envVars:
       - key: ALLOWED_ORIGINS
-        value: https://empuzki.github.io
+        value: https://mikukoskela.github.io

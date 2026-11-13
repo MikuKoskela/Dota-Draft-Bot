@@ -12,22 +12,13 @@ export default function Team({
     title,
     heroes,
     onRemove,
+    onSelectPosition,
+    selectedPosition,
     side = "own",
     maxHeroes,
 }) {
     const enemy = side === "enemy";
     const count = Object.values(heroes).filter(Boolean).length;
-    const occupiedPositions = positions.filter(([role]) => heroes[role]);
-    const emptyPositions = positions
-        .filter(([role]) => !heroes[role])
-        .slice(0, Math.max(0, maxHeroes - count));
-    const visiblePositions = (enemy
-        ? positions
-        : [...occupiedPositions, ...emptyPositions].sort(
-            ([roleA], [roleB]) =>
-                positions.findIndex(([role]) => role === roleA)
-                - positions.findIndex(([role]) => role === roleB)
-        ));
 
     return (
         <section
@@ -93,9 +84,7 @@ export default function Team({
                         </h2>
 
                         <p className="text-[9px] text-slate-600">
-                            {enemy
-                                ? "Opposing lineup"
-                                : "Four picks · fifth is your recommendation"}
+                            Click an open position to choose a hero
                         </p>
                     </div>
                 </div>
@@ -124,8 +113,10 @@ export default function Team({
                     grid-cols-6
                 `}
             >
-                {visiblePositions.map(([role, label], index) => {
+                {positions.map(([role, label], index) => {
                     const hero = heroes[role];
+                    const canSelect = !hero && count < maxHeroes;
+                    const isFinalPick = !enemy && !hero && !canSelect;
                     const rowAlignment = enemy
                         ? index === 3
                             ? "col-start-2"
@@ -135,16 +126,41 @@ export default function Team({
                         : index === 3
                             ? "col-start-3"
                             : "";
-                    return (
-                        <div key={role} className={`col-span-2 min-w-0 ${rowAlignment}`}>
+                    const content = (
+                        <>
                             <p className="mb-1 text-center text-[8px] font-bold tracking-wide text-slate-500 sm:text-[9px]">
                                 {label}
+                                {isFinalPick && (
+                                    <span className="ml-1 text-amber-400">FINAL</span>
+                                )}
                             </p>
                             <HeroCard
                                 hero={hero}
-                                enemy={enemy}
                                 onRemove={hero ? onRemove : undefined}
+                                emptyLabel={isFinalPick ? "Final pick" : "Choose hero"}
                             />
+                        </>
+                    );
+
+                    return (
+                        <div key={role} className={`col-span-2 min-w-0 ${rowAlignment}`}>
+                            {canSelect ? (
+                                <button
+                                    type="button"
+                                    onClick={() => onSelectPosition?.(role)}
+                                    aria-label={`Choose ${label} for ${enemy ? "enemy team" : "your team"}`}
+                                    aria-pressed={selectedPosition === role}
+                                    className={`block w-full rounded-lg text-left outline-none transition focus-visible:ring-2 focus-visible:ring-amber-400 ${
+                                        selectedPosition === role
+                                            ? "ring-2 ring-amber-400"
+                                            : "hover:ring-1 hover:ring-slate-500"
+                                    }`}
+                                >
+                                    {content}
+                                </button>
+                            ) : (
+                                <div>{content}</div>
+                            )}
                         </div>
                     );
                 })}

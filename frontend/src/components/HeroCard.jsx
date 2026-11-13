@@ -4,6 +4,7 @@ export default function HeroCard({
     variant = "default",
     onRemove,
     onSelect,
+    emptyLabel = "Empty slot",
 }) {
     const isEmpty = !hero;
 
@@ -32,7 +33,7 @@ export default function HeroCard({
                     </div>
 
                     <span className="text-xs font-medium text-slate-500">
-                        Empty slot
+                        {emptyLabel}
                     </span>
                 </div>
             </div>

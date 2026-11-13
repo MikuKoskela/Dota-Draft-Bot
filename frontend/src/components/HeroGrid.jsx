@@ -58,7 +58,7 @@ export default function HeroGrid({
                 <p className="text-[10px] text-slate-500">
                     {position
                         ? `${eligibleHeroes.length} heroes with at least ${Math.round(minRoleConfidence * 100)}% role fit · specialists first`
-                        : "All picks are filled; view the final-pick recommendations below"}
+                        : "Click an empty position on either team to browse heroes for that role"}
                 </p>
             </div>
 
@@ -99,7 +99,7 @@ export default function HeroGrid({
                 <div className="rounded-xl border border-dashed border-slate-800 px-4 py-10 text-center text-xs text-slate-500">
                     {position
                         ? `No unpicked heroes meet the role-confidence threshold for ${positionNames[position]}.`
-                        : "No additional position is available."}
+                        : "Choose an empty position on either team to see eligible heroes."}
                 </div>
             )}
         </section>
