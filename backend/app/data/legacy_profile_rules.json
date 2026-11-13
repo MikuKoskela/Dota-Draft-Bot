@@ -1,0 +1,1362 @@
+{
+  "rules": {
+    "ARCHETYPE_PROFILES": {
+      "agi": {
+        "physical": 0.8,
+        "right_click": 0.7,
+        "scaling": 0.55
+      },
+      "int": {
+        "burst": 0.45,
+        "magic": 0.7
+      },
+      "melee": {
+        "frontline": 0.35,
+        "gap_close": 0.2
+      },
+      "ranged": {
+        "backline": 0.55,
+        "kite": 0.25
+      },
+      "str": {
+        "frontline": 0.6,
+        "physical": 0.35,
+        "tank": 0.6
+      },
+      "universal": {
+        "flexible": 0.6,
+        "hybrid_damage": 0.6
+      }
+    },
+    "CORE_COMPOSITION_TARGETS": {
+      "catch": 0.8,
+      "disable": 1.0,
+      "frontline": 1.0,
+      "initiation": 0.9,
+      "magic": 0.7,
+      "physical": 0.7,
+      "push": 0.75,
+      "teamfight": 0.75,
+      "wave_clear": 0.75
+    },
+    "DEFAULT_WEAKNESSES_V07": {
+      "carry": {
+        "burst": 0.18,
+        "disable": 0.28
+      },
+      "illusion": {
+        "aoe": 0.42,
+        "cleave": 0.28
+      },
+      "melee": {
+        "kite": 0.3
+      },
+      "mobile": {
+        "root": 0.16,
+        "silence": 0.2
+      },
+      "squishy": {
+        "burst": 0.35,
+        "catch": 0.22
+      },
+      "tank": {
+        "break": 0.24
+      }
+    },
+    "ENEMY_COUNTER_NEEDS_V07": {
+      "Crystal Maiden": {
+        "burst": 0.3,
+        "catch": 0.3,
+        "mobile": 0.12,
+        "silence": 0.18
+      },
+      "Dawnbreaker": {
+        "break": 0.2,
+        "kite": 0.25,
+        "mobile": 0.18,
+        "sustained_damage": 0.15
+      },
+      "Hoodwink": {
+        "burst": 0.18,
+        "catch": 0.2,
+        "gap_close": 0.15,
+        "mobile": 0.12,
+        "silence": 0.12
+      },
+      "Juggernaut": {
+        "disable": 0.22,
+        "physical": 0.1,
+        "root": 0.15,
+        "stun": 0.18
+      },
+      "Necrophos": {
+        "burst": 0.18,
+        "dispel": 0.18,
+        "magic": 0.12,
+        "silence": 0.15
+      },
+      "Pudge": {
+        "break": 0.08,
+        "dispel": 0.12,
+        "mobile": 0.22,
+        "save": 0.28,
+        "sustained_damage": 0.12
+      },
+      "Templar Assassin": {
+        "aoe": 0.25,
+        "catch": 0.2,
+        "dot": 0.3,
+        "multi_hit": 0.4,
+        "reveal": 0.15
+      }
+    },
+    "HERO_SPECIAL_TAGS": {
+      "Abaddon": [
+        "dispel",
+        "heal",
+        "save",
+        "support"
+      ],
+      "Anti-Mage": [
+        "carry",
+        "escape",
+        "mana_burn",
+        "mobile",
+        "scaling"
+      ],
+      "Axe": [
+        "aoe",
+        "disable",
+        "initiation",
+        "tank",
+        "teamfight"
+      ],
+      "Bane": [
+        "control",
+        "disable"
+      ],
+      "Bristleback": [
+        "sustain",
+        "tank"
+      ],
+      "Centaur Warrunner": [
+        "initiation",
+        "stun",
+        "tank"
+      ],
+      "Chaos Knight": [
+        "burst",
+        "carry",
+        "illusion"
+      ],
+      "Crystal Maiden": [
+        "control",
+        "disable",
+        "root"
+      ],
+      "Dark Willow": [
+        "burst",
+        "disable",
+        "root",
+        "stun"
+      ],
+      "Dazzle": [
+        "heal",
+        "save",
+        "support"
+      ],
+      "Death Prophet": [
+        "aoe",
+        "push",
+        "silence"
+      ],
+      "Disruptor": [
+        "aoe",
+        "disable",
+        "silence"
+      ],
+      "Drow Ranger": [
+        "carry",
+        "scaling",
+        "silence"
+      ],
+      "Earthshaker": [
+        "aoe",
+        "disable",
+        "initiation",
+        "stun",
+        "teamfight"
+      ],
+      "Ember Spirit": [
+        "burst",
+        "escape",
+        "magic",
+        "mobile"
+      ],
+      "Faceless Void": [
+        "aoe",
+        "carry",
+        "disable",
+        "scaling",
+        "stun",
+        "teamfight"
+      ],
+      "Grimstroke": [
+        "disable",
+        "silence"
+      ],
+      "Invoker": [
+        "burst",
+        "control",
+        "disable",
+        "magic"
+      ],
+      "Io": [
+        "heal",
+        "save",
+        "support"
+      ],
+      "Jakiro": [
+        "aoe",
+        "disable",
+        "stun"
+      ],
+      "Juggernaut": [
+        "carry",
+        "scaling",
+        "sustain"
+      ],
+      "Legion Commander": [
+        "disable",
+        "dispel",
+        "duel",
+        "tank"
+      ],
+      "Lifestealer": [
+        "carry",
+        "scaling",
+        "sustain"
+      ],
+      "Lina": [
+        "aoe",
+        "burst",
+        "magic",
+        "stun"
+      ],
+      "Lion": [
+        "burst",
+        "disable",
+        "stun"
+      ],
+      "Magnus": [
+        "aoe",
+        "initiation",
+        "stun",
+        "teamfight"
+      ],
+      "Mars": [
+        "aoe",
+        "initiation",
+        "stun",
+        "tank",
+        "teamfight"
+      ],
+      "Monkey King": [
+        "aoe",
+        "carry",
+        "control",
+        "scaling",
+        "stun"
+      ],
+      "Naga Siren": [
+        "aoe",
+        "carry",
+        "control",
+        "illusion",
+        "scaling"
+      ],
+      "Night Stalker": [
+        "initiation",
+        "silence"
+      ],
+      "Nyx Assassin": [
+        "burst",
+        "disable",
+        "stun"
+      ],
+      "Omniknight": [
+        "dispel",
+        "heal",
+        "save",
+        "support"
+      ],
+      "Oracle": [
+        "dispel",
+        "heal",
+        "save",
+        "support"
+      ],
+      "Phantom Assassin": [
+        "burst",
+        "carry",
+        "escape",
+        "scaling"
+      ],
+      "Phantom Lancer": [
+        "carry",
+        "illusion",
+        "scaling"
+      ],
+      "Phoenix": [
+        "aoe",
+        "heal",
+        "teamfight"
+      ],
+      "Primal Beast": [
+        "disable",
+        "initiation",
+        "stun",
+        "tank"
+      ],
+      "Puck": [
+        "control",
+        "disable",
+        "escape",
+        "mobile"
+      ],
+      "Queen of Pain": [
+        "burst",
+        "escape",
+        "magic",
+        "mobile"
+      ],
+      "Riki": [
+        "escape",
+        "mobile",
+        "silence"
+      ],
+      "Rubick": [
+        "control",
+        "disable",
+        "stun"
+      ],
+      "Sand King": [
+        "aoe",
+        "disable",
+        "initiation",
+        "stun"
+      ],
+      "Shadow Demon": [
+        "disable",
+        "dispel",
+        "illusion"
+      ],
+      "Shadow Shaman": [
+        "disable",
+        "push",
+        "stun"
+      ],
+      "Silencer": [
+        "aoe",
+        "disable",
+        "silence"
+      ],
+      "Skywrath Mage": [
+        "burst",
+        "silence"
+      ],
+      "Slardar": [
+        "disable",
+        "initiation",
+        "stun",
+        "tank"
+      ],
+      "Slark": [
+        "carry",
+        "dispel",
+        "escape",
+        "mobile",
+        "scaling"
+      ],
+      "Spectre": [
+        "carry",
+        "illusion",
+        "scaling"
+      ],
+      "Storm Spirit": [
+        "burst",
+        "escape",
+        "magic",
+        "mobile"
+      ],
+      "Sven": [
+        "aoe",
+        "carry",
+        "cleave",
+        "scaling",
+        "stun"
+      ],
+      "Terrorblade": [
+        "carry",
+        "illusion",
+        "push",
+        "scaling"
+      ],
+      "Tidehunter": [
+        "aoe",
+        "initiation",
+        "stun",
+        "tank",
+        "teamfight"
+      ],
+      "Tinker": [
+        "aoe",
+        "burst",
+        "magic",
+        "mobile"
+      ],
+      "Tiny": [
+        "burst",
+        "initiation",
+        "stun"
+      ],
+      "Treant Protector": [
+        "heal",
+        "root",
+        "support"
+      ],
+      "Underlord": [
+        "aoe",
+        "disable",
+        "push",
+        "root",
+        "tank"
+      ],
+      "Ursa": [
+        "burst",
+        "carry",
+        "scaling"
+      ],
+      "Vengeful Spirit": [
+        "disable",
+        "initiation",
+        "stun"
+      ],
+      "Void Spirit": [
+        "burst",
+        "escape",
+        "magic",
+        "mobile"
+      ],
+      "Warlock": [
+        "heal",
+        "support",
+        "teamfight"
+      ],
+      "Winter Wyvern": [
+        "heal",
+        "save",
+        "support",
+        "teamfight"
+      ],
+      "Witch Doctor": [
+        "disable",
+        "stun"
+      ],
+      "Zeus": [
+        "aoe",
+        "burst",
+        "magic"
+      ]
+    },
+    "HERO_WEIGHT_OVERRIDES": {
+      "Ancient Apparition": {
+        "aoe": 0.8,
+        "burst": 0.65,
+        "magic": 0.9,
+        "squishy": 0.9,
+        "teamfight": 0.8,
+        "weak_to_gap_close": 0.9
+      },
+      "Bristleback": {
+        "frontline": 1.0,
+        "low_mobility": 0.65,
+        "physical": 0.7,
+        "sustained_damage": 0.75,
+        "tank": 1.0,
+        "weak_to_break": 1.0
+      },
+      "Dark Seer": {
+        "aoe": 0.9,
+        "frontline": 0.7,
+        "initiation": 0.7,
+        "push": 0.6,
+        "teamfight": 0.9
+      },
+      "Death Prophet": {
+        "aoe": 0.8,
+        "magic": 0.9,
+        "push": 1.0,
+        "silence": 0.7,
+        "teamfight": 0.75,
+        "tower_damage": 0.95
+      },
+      "Earth Spirit": {
+        "catch": 0.9,
+        "disable": 0.9,
+        "initiation": 0.9,
+        "magic": 0.65,
+        "mobile": 0.85,
+        "silence": 0.7,
+        "stun": 0.7
+      },
+      "Faceless Void": {
+        "carry": 1.0,
+        "catch": 0.9,
+        "disable": 0.95,
+        "hypercarry": 0.9,
+        "initiation": 1.0,
+        "late_game": 0.95,
+        "physical": 0.9,
+        "scaling": 1.0,
+        "teamfight": 1.0
+      },
+      "Juggernaut": {
+        "carry": 1.0,
+        "dispel": 0.75,
+        "physical": 0.85,
+        "push": 0.55,
+        "scaling": 0.85,
+        "sustained_damage": 0.85
+      },
+      "Legion Commander": {
+        "catch": 0.9,
+        "dispel": 0.8,
+        "duel": 1.0,
+        "frontline": 0.7,
+        "initiation": 0.9
+      },
+      "Lion": {
+        "burst": 0.95,
+        "catch": 0.85,
+        "disable": 1.0,
+        "hex": 0.9,
+        "squishy": 0.95,
+        "stun": 0.9
+      },
+      "Necrophos": {
+        "aoe": 0.65,
+        "low_mobility": 0.8,
+        "magic": 0.9,
+        "sustain": 0.9,
+        "teamfight": 0.7,
+        "weak_to_silence": 0.9
+      },
+      "Silencer": {
+        "counter_initiation": 0.95,
+        "magic": 0.7,
+        "silence": 1.0,
+        "squishy": 0.85,
+        "teamfight": 0.75
+      },
+      "Slark": {
+        "carry": 1.0,
+        "catch": 0.75,
+        "dispel": 0.85,
+        "escape": 1.0,
+        "mobile": 0.95,
+        "weak_to_disable": 0.75
+      },
+      "Sven": {
+        "aoe": 0.75,
+        "carry": 1.0,
+        "cleave": 1.0,
+        "frontline": 0.7,
+        "physical": 0.95,
+        "stun": 0.75
+      },
+      "Underlord": {
+        "aoe": 0.9,
+        "frontline": 1.0,
+        "low_mobility": 0.8,
+        "push": 0.85,
+        "root": 0.75,
+        "tank": 0.95,
+        "teamfight": 0.8,
+        "wave_clear": 1.0,
+        "weak_to_kiting": 0.75
+      }
+    },
+    "POSITION_FITNESS": {
+      "Ancient Apparition": {
+        "4": 0.7,
+        "5": 1.0
+      },
+      "Anti-Mage": {
+        "1": 1.0
+      },
+      "Axe": {
+        "3": 1.0
+      },
+      "Bristleback": {
+        "1": 0.55,
+        "3": 1.0
+      },
+      "Crystal Maiden": {
+        "4": 0.55,
+        "5": 1.0
+      },
+      "Dawnbreaker": {
+        "1": 0.35,
+        "3": 1.0,
+        "4": 0.55
+      },
+      "Death Prophet": {
+        "1": 0.55,
+        "2": 1.0,
+        "3": 0.72
+      },
+      "Dragon Knight": {
+        "1": 0.6,
+        "2": 0.9,
+        "3": 0.75
+      },
+      "Earth Spirit": {
+        "4": 1.0
+      },
+      "Faceless Void": {
+        "1": 1.0
+      },
+      "Hoodwink": {
+        "2": 0.25,
+        "4": 1.0,
+        "5": 0.55
+      },
+      "Jakiro": {
+        "3": 0.25,
+        "4": 0.9,
+        "5": 1.0
+      },
+      "Juggernaut": {
+        "1": 1.0
+      },
+      "Legion Commander": {
+        "1": 0.5,
+        "3": 1.0
+      },
+      "Lina": {
+        "1": 0.7,
+        "2": 1.0,
+        "4": 0.65
+      },
+      "Night Stalker": {
+        "1": 0.25,
+        "2": 0.2,
+        "3": 1.0,
+        "4": 0.45
+      },
+      "Outworld Destroyer": {
+        "1": 0.45,
+        "2": 1.0
+      },
+      "Phantom Assassin": {
+        "1": 1.0
+      },
+      "Phantom Lancer": {
+        "1": 1.0
+      },
+      "Pudge": {
+        "1": 0.35,
+        "2": 0.35,
+        "3": 0.85,
+        "4": 0.8,
+        "5": 0.3
+      },
+      "Razor": {
+        "1": 0.65,
+        "2": 0.9,
+        "3": 0.8
+      },
+      "Silencer": {
+        "2": 0.45,
+        "4": 1.0,
+        "5": 0.7
+      },
+      "Slark": {
+        "1": 1.0,
+        "2": 0.55
+      },
+      "Spectre": {
+        "1": 1.0
+      },
+      "Sven": {
+        "1": 1.0,
+        "3": 0.2
+      },
+      "Tiny": {
+        "1": 0.65,
+        "2": 0.85,
+        "3": 0.75,
+        "4": 0.35
+      },
+      "Troll Warlord": {
+        "1": 1.0
+      },
+      "Underlord": {
+        "3": 1.0
+      },
+      "Ursa": {
+        "1": 1.0,
+        "3": 0.3
+      },
+      "Viper": {
+        "1": 0.5,
+        "2": 0.85,
+        "3": 0.8
+      }
+    },
+    "POSITION_OVERRIDES": {
+      "Abaddon": [
+        5
+      ],
+      "Anti-Mage": [
+        1
+      ],
+      "Axe": [
+        3
+      ],
+      "Bane": [
+        4,
+        5
+      ],
+      "Bristleback": [
+        3
+      ],
+      "Centaur Warrunner": [
+        3
+      ],
+      "Crystal Maiden": [
+        5
+      ],
+      "Dark Willow": [
+        4,
+        5
+      ],
+      "Dazzle": [
+        5
+      ],
+      "Disruptor": [
+        4,
+        5
+      ],
+      "Drow Ranger": [
+        1
+      ],
+      "Earthshaker": [
+        3,
+        4
+      ],
+      "Ember Spirit": [
+        2
+      ],
+      "Faceless Void": [
+        1
+      ],
+      "Grimstroke": [
+        4,
+        5
+      ],
+      "Invoker": [
+        2
+      ],
+      "Io": [
+        5
+      ],
+      "Jakiro": [
+        4,
+        5
+      ],
+      "Juggernaut": [
+        1
+      ],
+      "Legion Commander": [
+        3
+      ],
+      "Lifestealer": [
+        1
+      ],
+      "Lion": [
+        4,
+        5
+      ],
+      "Magnus": [
+        3
+      ],
+      "Mars": [
+        3
+      ],
+      "Naga Siren": [
+        1
+      ],
+      "Nyx Assassin": [
+        4
+      ],
+      "Omniknight": [
+        5
+      ],
+      "Oracle": [
+        5
+      ],
+      "Phantom Assassin": [
+        1
+      ],
+      "Phantom Lancer": [
+        1
+      ],
+      "Primal Beast": [
+        3
+      ],
+      "Puck": [
+        2
+      ],
+      "Queen of Pain": [
+        2
+      ],
+      "Rubick": [
+        4,
+        5
+      ],
+      "Sand King": [
+        3
+      ],
+      "Shadow Shaman": [
+        4,
+        5
+      ],
+      "Silencer": [
+        5
+      ],
+      "Skywrath Mage": [
+        4,
+        5
+      ],
+      "Slardar": [
+        3
+      ],
+      "Storm Spirit": [
+        2
+      ],
+      "Sven": [
+        1
+      ],
+      "Terrorblade": [
+        1
+      ],
+      "Tidehunter": [
+        3
+      ],
+      "Tinker": [
+        2
+      ],
+      "Treant Protector": [
+        5
+      ],
+      "Underlord": [
+        3
+      ],
+      "Ursa": [
+        1
+      ],
+      "Vengeful Spirit": [
+        4,
+        5
+      ],
+      "Void Spirit": [
+        2
+      ],
+      "Warlock": [
+        5
+      ],
+      "Winter Wyvern": [
+        5
+      ],
+      "Witch Doctor": [
+        4,
+        5
+      ],
+      "Zeus": [
+        2
+      ]
+    },
+    "ROLE_WEIGHTS_V07": {
+      "Anti-Mage": {
+        "1": 1.0
+      },
+      "Axe": {
+        "3": 1.0
+      },
+      "Bristleback": {
+        "1": 0.55,
+        "3": 1.0
+      },
+      "Centaur Warrunner": {
+        "3": 1.0
+      },
+      "Chaos Knight": {
+        "1": 0.9,
+        "3": 0.75
+      },
+      "Crystal Maiden": {
+        "4": 0.55,
+        "5": 1.0
+      },
+      "Dawnbreaker": {
+        "1": 0.35,
+        "3": 1.0,
+        "4": 0.55
+      },
+      "Dazzle": {
+        "3": 0.3,
+        "4": 0.8,
+        "5": 1.0
+      },
+      "Dragon Knight": {
+        "1": 0.6,
+        "2": 0.9,
+        "3": 0.75
+      },
+      "Earth Spirit": {
+        "4": 1.0
+      },
+      "Faceless Void": {
+        "1": 1.0
+      },
+      "Hoodwink": {
+        "2": 0.25,
+        "4": 1.0,
+        "5": 0.55
+      },
+      "Io": {
+        "4": 0.55,
+        "5": 1.0
+      },
+      "Jakiro": {
+        "3": 0.25,
+        "4": 0.9,
+        "5": 1.0
+      },
+      "Juggernaut": {
+        "1": 1.0
+      },
+      "Legion Commander": {
+        "1": 0.55,
+        "3": 1.0
+      },
+      "Lifestealer": {
+        "1": 0.95,
+        "3": 0.55
+      },
+      "Lina": {
+        "1": 0.7,
+        "2": 1.0,
+        "4": 0.65
+      },
+      "Mars": {
+        "3": 1.0
+      },
+      "Monkey King": {
+        "1": 0.75,
+        "2": 0.65,
+        "3": 0.8,
+        "4": 0.35
+      },
+      "Night Stalker": {
+        "1": 0.25,
+        "2": 0.2,
+        "3": 1.0,
+        "4": 0.45
+      },
+      "Oracle": {
+        "4": 0.55,
+        "5": 1.0
+      },
+      "Phantom Assassin": {
+        "1": 1.0
+      },
+      "Phantom Lancer": {
+        "1": 1.0
+      },
+      "Puck": {
+        "2": 1.0,
+        "4": 0.5
+      },
+      "Silencer": {
+        "2": 0.45,
+        "4": 1.0,
+        "5": 0.7
+      },
+      "Slark": {
+        "1": 0.9,
+        "2": 0.35
+      },
+      "Spectre": {
+        "1": 1.0
+      },
+      "Sven": {
+        "1": 1.0,
+        "3": 0.2
+      },
+      "Templar Assassin": {
+        "1": 0.75,
+        "2": 1.0
+      },
+      "Tiny": {
+        "1": 0.65,
+        "2": 0.85,
+        "3": 0.75,
+        "4": 0.35
+      },
+      "Underlord": {
+        "3": 1.0
+      },
+      "Ursa": {
+        "1": 1.0,
+        "3": 0.3
+      },
+      "Vengeful Spirit": {
+        "1": 0.2,
+        "3": 0.2,
+        "4": 1.0,
+        "5": 0.75
+      },
+      "Void Spirit": {
+        "2": 1.0,
+        "4": 0.35
+      },
+      "Zeus": {
+        "2": 1.0,
+        "4": 0.35
+      }
+    },
+    "ROLE_WEIGHT_HINTS": {
+      "Carry": {
+        "carry": 1.0,
+        "late_game": 0.55,
+        "scaling": 0.75
+      },
+      "Disabler": {
+        "control": 0.7,
+        "disable": 0.85
+      },
+      "Durable": {
+        "frontline": 0.65,
+        "tank": 0.8
+      },
+      "Escape": {
+        "escape": 0.85,
+        "mobile": 0.75
+      },
+      "Initiator": {
+        "catch": 0.6,
+        "initiation": 0.85
+      },
+      "Jungler": {
+        "greedy": 0.65,
+        "item_dependent": 0.45
+      },
+      "Nuker": {
+        "burst": 0.8
+      },
+      "Pusher": {
+        "push": 0.85,
+        "tower_damage": 0.65,
+        "wave_clear": 0.6
+      },
+      "Support": {
+        "support": 1.0,
+        "utility": 0.75
+      }
+    },
+    "SPECIFIC_WEAKNESSES_V07": {
+      "Anti-Mage": {
+        "burst": 0.22,
+        "catch": 0.28,
+        "disable": 0.52
+      },
+      "Dragon Knight": {
+        "break": 0.28,
+        "kite": 0.22,
+        "magic": 0.2
+      },
+      "Juggernaut": {
+        "burst": 0.25,
+        "catch": 0.2,
+        "disable": 0.35
+      },
+      "Night Stalker": {
+        "disable": 0.32,
+        "kite": 0.55
+      },
+      "Phantom Assassin": {
+        "burst": 0.22,
+        "disable": 0.42,
+        "magic": 0.25
+      },
+      "Phantom Lancer": {
+        "aoe": 0.8,
+        "cleave": 0.55,
+        "wave_clear": 0.35
+      },
+      "Slark": {
+        "root": 0.25,
+        "silence": 0.34,
+        "stun": 0.28
+      },
+      "Sven": {
+        "disable": 0.35,
+        "kite": 0.75,
+        "magic": 0.15
+      },
+      "Tiny": {
+        "disable": 0.3,
+        "kite": 0.42,
+        "magic": 0.18
+      },
+      "Ursa": {
+        "disable": 0.38,
+        "kite": 0.72,
+        "root": 0.28
+      }
+    },
+    "TAG_GROUPS": {
+      "control": [
+        "disable",
+        "fear",
+        "hex",
+        "root",
+        "silence",
+        "stun",
+        "taunt"
+      ],
+      "damage": [
+        "burst",
+        "magic",
+        "physical",
+        "pure_damage",
+        "right_click",
+        "sustained_damage"
+      ],
+      "defense": [
+        "dispel",
+        "frontline",
+        "heal",
+        "peel",
+        "save",
+        "strong_dispel",
+        "tank"
+      ],
+      "objective": [
+        "push",
+        "roshan",
+        "split_push",
+        "tower_damage",
+        "wave_clear"
+      ],
+      "teamfight": [
+        "aoe",
+        "counter_initiation",
+        "follow_up",
+        "initiation",
+        "teamfight"
+      ]
+    },
+    "V04_PROFILE_OVERRIDES": {
+      "Ancient Apparition": {
+        "tags": {
+          "anti_heal": 1.0,
+          "aoe": 0.85,
+          "backline": 0.9,
+          "burst": 0.55,
+          "follow_up": 0.9,
+          "magic": 0.8,
+          "teamfight": 0.8
+        },
+        "weaknesses": {
+          "low_mobility": 0.9,
+          "squishy": 0.9,
+          "weak_to_gap_close": 0.85
+        }
+      },
+      "Bristleback": {
+        "tags": {
+          "frontline": 1.0,
+          "physical": 0.65,
+          "strong_midgame": 0.7,
+          "sustained_damage": 0.9,
+          "tank": 1.0
+        },
+        "weaknesses": {
+          "weak_to_break": 1.0,
+          "weak_to_kiting": 0.75,
+          "weak_to_magic": 0.35
+        }
+      },
+      "Dark Seer": {
+        "tags": {
+          "aoe": 0.9,
+          "counter_initiation": 0.85,
+          "frontline": 0.7,
+          "initiation": 0.75,
+          "magic": 0.7,
+          "push": 0.6,
+          "teamfight": 0.95,
+          "wave_clear": 0.95
+        },
+        "weaknesses": {
+          "weak_to_silence": 0.4
+        }
+      },
+      "Earth Spirit": {
+        "tags": {
+          "catch": 0.95,
+          "disable": 0.9,
+          "follow_up": 0.85,
+          "initiation": 0.95,
+          "magic": 0.65,
+          "mobile": 0.95,
+          "silence": 0.7,
+          "stun": 0.75
+        },
+        "weaknesses": {
+          "weak_to_disable": 0.35,
+          "weak_to_silence": 0.35
+        }
+      },
+      "Faceless Void": {
+        "tags": {
+          "carry": 1.0,
+          "catch": 0.95,
+          "disable": 0.95,
+          "follow_up": 0.9,
+          "initiation": 1.0,
+          "late_game": 0.95,
+          "physical": 0.9,
+          "right_click": 0.85,
+          "scaling": 1.0,
+          "teamfight": 1.0
+        },
+        "weaknesses": {
+          "needs_space": 0.55,
+          "weak_early": 0.4
+        }
+      },
+      "Juggernaut": {
+        "tags": {
+          "carry": 1.0,
+          "dispel": 0.7,
+          "heal": 0.45,
+          "physical": 0.85,
+          "right_click": 0.9,
+          "scaling": 0.85,
+          "sustained_damage": 0.8
+        },
+        "weaknesses": {
+          "needs_space": 0.35,
+          "weak_to_disable": 0.35
+        }
+      },
+      "Lion": {
+        "tags": {
+          "burst": 0.9,
+          "catch": 0.8,
+          "control": 1.0,
+          "disable": 1.0,
+          "hex": 1.0,
+          "magic": 0.9,
+          "stun": 0.9
+        },
+        "weaknesses": {
+          "low_mobility": 0.9,
+          "squishy": 0.9,
+          "weak_to_gap_close": 0.9
+        }
+      },
+      "Necrophos": {
+        "tags": {
+          "anti_tank": 0.9,
+          "frontline": 0.45,
+          "heal": 0.7,
+          "magic": 0.9,
+          "sustained_damage": 0.85,
+          "teamfight": 0.7
+        },
+        "weaknesses": {
+          "low_mobility": 0.65,
+          "weak_to_gap_close": 0.55,
+          "weak_to_silence": 0.75
+        }
+      },
+      "Silencer": {
+        "tags": {
+          "backline": 0.8,
+          "counter_initiation": 0.95,
+          "disable": 0.7,
+          "magic": 0.7,
+          "silence": 1.0,
+          "teamfight": 0.85
+        },
+        "weaknesses": {
+          "low_mobility": 0.65,
+          "squishy": 0.75,
+          "weak_to_gap_close": 0.75
+        }
+      }
+    },
+    "WEAKNESS_RULES": {
+      "backline": {
+        "weak_to_gap_close": 0.45
+      },
+      "carry": {
+        "needs_space": 0.45
+      },
+      "hypercarry": {
+        "needs_space": 0.7,
+        "weak_early": 0.55
+      },
+      "item_dependent": {
+        "weak_early": 0.45
+      },
+      "low_mobility": {
+        "weak_to_disable": 0.35,
+        "weak_to_kiting": 0.55
+      },
+      "magic": {
+        "weak_to_silence": 0.3
+      },
+      "squishy": {
+        "weak_to_burst": 0.7,
+        "weak_to_gap_close": 0.55
+      }
+    },
+    "WEAKNESS_TAGS": [
+      "cooldown_dependent",
+      "low_mobility",
+      "mana_dependent",
+      "needs_frontline",
+      "needs_peel",
+      "needs_space",
+      "squishy",
+      "weak_to_aoe",
+      "weak_to_break",
+      "weak_to_burst",
+      "weak_to_disable",
+      "weak_to_gap_close",
+      "weak_to_kiting",
+      "weak_to_magic",
+      "weak_to_physical",
+      "weak_to_silence"
+    ]
+  },
+  "source_file": "Dota_Draft_Assistant_v0.9.py",
+  "source_version": "0.9"
+}

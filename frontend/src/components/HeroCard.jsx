@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import { getHeroMap } from "../api/dotaApi";
 import { heroData } from "../data/heroData.Js";
 export default function HeroCard({
     hero,
@@ -14,7 +12,7 @@ export default function HeroCard({
             <div
                 className="
                     relative
-                    aspect-[3/4]
+                    aspect-video
                     w-full
                     overflow-hidden
                     rounded-lg
@@ -40,27 +38,24 @@ export default function HeroCard({
             </div>
         );
     }
-    const [heroMap, setHeroMap] = useState({});
-
     const isRecommendation = variant === "recommendation";
-   
-    useEffect(() => {
-        getHeroMap().then(setHeroMap);
-    }, []);
 
 const heroInfo = Object.values(heroData).find(
     (heroDataItem) => heroDataItem.displayName === hero
 );
 if (!heroInfo) {
-    console.log("Hero not found:", hero);
-    return <div>Loading...</div>;
+    return (
+        <div className="flex aspect-video items-center justify-center rounded-lg border border-slate-700 bg-slate-900 p-2 text-center text-xs text-slate-400">
+            {hero}
+        </div>
+    );
 }
     return (
         <div
             className={`
                 group
                 relative
-                aspect-[3/4]
+                aspect-video
                 w-full
                 overflow-hidden
                 rounded-lg
@@ -75,44 +70,19 @@ if (!heroInfo) {
                 hover:shadow-2xl
                 ${
                     isRecommendation
-                        ? "border-blue-500/30 hover:border-blue-400/70"
+                        ? "border-amber-500/40 hover:border-amber-300/80"
                         : "border-slate-700 hover:border-slate-500"
                 }
             `}
         >
-            {/* Placeholder hero image */}
-            <div
-                className="
-                    absolute
-                    inset-0
-                    flex
-                    items-center
-                    justify-center
-                    bg-gradient-to-br
-                    from-slate-700
-                    via-slate-800
-                    to-slate-950
-                "
-            >
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(59,130,246,0.22),transparent_45%)]" />
-
-              {/* Hero image background */}
-            <div className="absolute inset-0">
-                <img
-                    src={`${heroInfo.image}`}
-                    alt={heroInfo.displayName}
-                    className="absolute inset-0 h-full w-full object-cover"
-                />
-                {/* Blue/dark overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-900/30 via-slate-900/40 to-slate-950/80" />
-
-                {/* Optional radial effect */}
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(59,130,246,0.22),transparent_45%)]" />
-            </div>
-            </div>
+            <img
+                src={heroInfo.image}
+                alt={heroInfo.displayName}
+                className="absolute inset-0 h-full w-full object-cover"
+            />
 
             {/* Bottom gradient */}
-            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/90 to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/85 to-transparent" />
 
             {/* Hero name */}
             <div className="absolute inset-x-0 bottom-0 p-2 sm:p-3">
@@ -156,7 +126,7 @@ if (!heroInfo) {
 
             {/* Recommendation score */}
             {isRecommendation && (
-                <div className="absolute left-2 top-2 rounded-md border border-blue-400/20 bg-black/60 px-2 py-1 text-[10px] font-semibold text-blue-300 backdrop-blur">
+                <div className="absolute left-2 top-2 rounded-md border border-amber-400/30 bg-black/70 px-2 py-1 text-[10px] font-semibold text-amber-300 backdrop-blur">
                     Recommended
                 </div>
             )}

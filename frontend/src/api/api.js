@@ -1,52 +1,58 @@
-const API_URL = "http://localhost:8000/api";
+const API_URL = import.meta.env.VITE_API_URL?.replace(/\/+$/, "")
+    || (import.meta.env.DEV ? "http://localhost:8000" : "");
+
+async function request(path, options) {
+    if (!API_URL) {
+        throw new Error("VITE_API_URL must be set to the HTTPS API URL before production build.");
+    }
+    if (import.meta.env.PROD && !API_URL.startsWith("https://")) {
+        throw new Error("The production API URL must use HTTPS.");
+    }
+
+    const response = await fetch(`${API_URL}${path}`, options);
+    if (!response.ok) {
+        let detail = `Request failed (${response.status})`;
+        try {
+            const body = await response.json();
+            detail = typeof body.detail === "string"
+                ? body.detail
+                : JSON.stringify(body.detail ?? body);
+        } catch {
+            // Keep the HTTP status message when the server does not return JSON.
+        }
+        throw new Error(detail);
+    }
+    return response.json();
+}
 
 export async function getHeroes() {
-    const response = await fetch(`${API_URL}/heroes`);
-
-    if (!response.ok) {
-        throw new Error("Failed to fetch heroes");
-    }
-
-    return response.json();
+    const data = await request("/heroes");
+    return data.heroes;
 }
 
+export function getMeta() {
+    return request("/meta");
+}
 
-export async function searchHeroes(query) {
-    const response = await fetch(
-        `${API_URL}/heroes/search?q=${encodeURIComponent(query)}`
+export function getHeroProfile(hero) {
+    return request(`/heroes/${encodeURIComponent(hero)}`);
+}
+
+export function getMatchup(candidate, enemy) {
+    return request(
+        `/matchups/${encodeURIComponent(candidate)}/${encodeURIComponent(enemy)}`
     );
-
-    if (!response.ok) {
-        throw new Error("Failed to search heroes");
-    }
-
-    return response.json();
 }
 
-
-export async function analyzeDraft(enemyTeam, ownTeam) {
-    const response = await fetch(`${API_URL}/analyze`, {
+export function rankDraft(ownTeam, enemyTeam, targetRole, draftPhase) {
+    return request("/draft/rank", {
         method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+            own_team: ownTeam,
             enemy_team: enemyTeam,
-            own_team: ownTeam
-        })
+            target_role: targetRole,
+            draft_phase: draftPhase,
+        }),
     });
-
-   if (!response.ok) {
-    const error = await response.json();
-
-    console.error("Backend error:", error);
-
-    throw new Error(
-        typeof error.detail === "string"
-            ? error.detail
-            : JSON.stringify(error.detail)
-    );
-}
-
-    return response.json();
 }

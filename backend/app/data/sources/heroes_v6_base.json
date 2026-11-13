@@ -1,0 +1,5656 @@
+{
+  "Abaddon": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.88
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "frontline",
+      "heal",
+      "melee",
+      "save",
+      "support"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 2,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Alchemist": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "carry",
+      "melee",
+      "physical_damage",
+      "roshan",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 2,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.68,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Ancient Apparition": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.88
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "anti_regeneration",
+      "magic_damage",
+      "ranged",
+      "support",
+      "teamfight"
+    ],
+    "weaknesses": [
+      "burst",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Anti-Mage": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "carry",
+      "late_game_scaling",
+      "melee",
+      "mobility",
+      "physical_damage"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "farm_dependency",
+      "hard_disable"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 3
+    },
+    "item_profile": {
+      "farm_dependency": 0.82,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.35,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Arc Warden": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.8,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "late_game_scaling",
+      "ranged"
+    ],
+    "weaknesses": [
+      "farm_dependency",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 3
+    },
+    "item_profile": {
+      "farm_dependency": 0.82,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Axe": {
+    "roles": {
+      "pos1": 0.0,
+      "pos2": 0.0,
+      "pos3": 0.98,
+      "pos4": 0.0,
+      "pos5": 0.0
+    },
+    "difficulty": 0.55,
+    "tags": [
+      "frontline",
+      "hard_disable",
+      "initiation",
+      "melee",
+      "offlane",
+      "physical_damage",
+      "teamfight",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "break",
+      "kiting",
+      "low_mobility",
+      "magic_damage"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 3,
+      "wave_clear": 3,
+      "physical_damage": 0,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "patch": "7.41e",
+    "data_quality": "roster_curated_v1",
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Bane": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.88
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "hard_disable",
+      "ranged",
+      "support"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Batrider": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.88,
+      "pos4": 0.86,
+      "pos5": 0.2
+    },
+    "difficulty": 0.68,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "hard_disable",
+      "initiation",
+      "lane_dominator",
+      "magic_damage",
+      "mobility",
+      "ranged",
+      "support"
+    ],
+    "weaknesses": [],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Beastmaster": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "hard_disable",
+      "initiation",
+      "melee",
+      "physical_damage",
+      "push"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 2,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Bloodseeker": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "carry",
+      "melee",
+      "physical_damage"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.68,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Bounty Hunter": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "melee",
+      "mobility",
+      "support"
+    ],
+    "weaknesses": [],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Brewmaster": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "frontline",
+      "hard_disable",
+      "initiation",
+      "melee",
+      "teamfight"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Bristleback": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "frontline",
+      "lane_dominator",
+      "melee"
+    ],
+    "weaknesses": [
+      "kiting",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.68,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Broodmother": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.68,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "melee",
+      "mobility",
+      "physical_damage",
+      "push",
+      "wave_clear"
+    ],
+    "weaknesses": [],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 2,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Centaur Warrunner": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "frontline",
+      "hard_disable",
+      "initiation",
+      "melee"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Chaos Knight": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "carry",
+      "frontline",
+      "hard_disable",
+      "melee",
+      "physical_damage"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "kiting",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 3,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.68,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.68,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Chen": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.88
+    },
+    "difficulty": 0.8,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "heal",
+      "push",
+      "ranged",
+      "support"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 2,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Clinkz": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "carry",
+      "mobility",
+      "physical_damage",
+      "push",
+      "ranged"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "hard_disable"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 2,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.68,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.35,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Clockwerk": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "hard_disable",
+      "initiation",
+      "melee",
+      "support"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Crystal Maiden": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.7,
+      "pos5": 0.98
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "hard_disable",
+      "magic_damage",
+      "ranged",
+      "support"
+    ],
+    "weaknesses": [
+      "burst",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Dark Seer": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "initiation",
+      "melee",
+      "teamfight",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 0,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Dark Willow": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "hard_disable",
+      "magic_damage",
+      "ranged",
+      "support"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Dawnbreaker": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.95,
+      "pos4": 0.35,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "frontline",
+      "heal",
+      "melee",
+      "physical_damage"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Dazzle": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.88
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "heal",
+      "ranged",
+      "save",
+      "support"
+    ],
+    "weaknesses": [
+      "burst",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 2,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Death Prophet": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "lane_dominator",
+      "magic_damage",
+      "push",
+      "ranged",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 2,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Disruptor": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.88
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "hard_disable",
+      "magic_damage",
+      "ranged",
+      "support",
+      "teamfight"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Doom": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "frontline",
+      "hard_disable",
+      "initiation",
+      "melee"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Dragon Knight": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "frontline",
+      "melee",
+      "physical_damage",
+      "push",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "kiting",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 3,
+      "wave_clear": 3,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 2,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.68,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Drow Ranger": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "carry",
+      "lane_dominator",
+      "late_game_scaling",
+      "physical_damage",
+      "push",
+      "ranged",
+      "roshan"
+    ],
+    "weaknesses": [
+      "farm_dependency",
+      "hard_disable",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 2,
+      "push": 2,
+      "teamfight": 0,
+      "scaling": 3
+    },
+    "item_profile": {
+      "farm_dependency": 0.82,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.35,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Earth Spirit": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.2
+    },
+    "difficulty": 0.8,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "hard_disable",
+      "initiation",
+      "magic_damage",
+      "melee",
+      "mobility",
+      "support"
+    ],
+    "weaknesses": [],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Earthshaker": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "hard_disable",
+      "initiation",
+      "magic_damage",
+      "melee",
+      "support",
+      "teamfight"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Elder Titan": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "melee",
+      "teamfight"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Ember Spirit": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.68,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "magic_damage",
+      "melee",
+      "mobility",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "hard_disable"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.35,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Enchantress": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.88
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "heal",
+      "lane_dominator",
+      "magic_damage",
+      "ranged",
+      "support"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Enigma": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "hard_disable",
+      "initiation",
+      "ranged",
+      "teamfight"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Faceless Void": {
+    "roles": {
+      "pos1": 0.95,
+      "pos2": 0.0,
+      "pos3": 0.0,
+      "pos4": 0.0,
+      "pos5": 0.0
+    },
+    "difficulty": 0.68,
+    "tags": [
+      "carry",
+      "hard_disable",
+      "initiation",
+      "late_game_scaling",
+      "melee",
+      "mobility",
+      "physical_damage",
+      "teamfight"
+    ],
+    "weaknesses": [
+      "burst",
+      "early_pressure",
+      "farm_dependency",
+      "save",
+      "silence"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 3
+    },
+    "item_profile": {
+      "farm_dependency": 0.82,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "patch": "7.41e",
+    "data_quality": "roster_curated_v1",
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Grimstroke": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.88
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "hard_disable",
+      "magic_damage",
+      "ranged",
+      "support",
+      "teamfight"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Gyrocopter": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "carry",
+      "physical_damage",
+      "ranged",
+      "teamfight",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.68,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Hoodwink": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.95,
+      "pos5": 0.4
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "mobility",
+      "ranged",
+      "support"
+    ],
+    "weaknesses": [
+      "burst"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Huskar": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "frontline",
+      "lane_dominator",
+      "melee",
+      "roshan"
+    ],
+    "weaknesses": [
+      "hard_disable",
+      "kiting",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 2,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.35,
+      "mobility_dependency": 0.68,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Invoker": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.8,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "hard_disable",
+      "magic_damage",
+      "ranged"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Io": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.88
+    },
+    "difficulty": 0.8,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "heal",
+      "ranged",
+      "save",
+      "support"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 2,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Jakiro": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.8,
+      "pos5": 0.94
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "hard_disable",
+      "magic_damage",
+      "push",
+      "ranged",
+      "support",
+      "teamfight",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 2,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Juggernaut": {
+    "roles": {
+      "pos1": 0.95,
+      "pos2": 0.0,
+      "pos3": 0.0,
+      "pos4": 0.0,
+      "pos5": 0.0
+    },
+    "difficulty": 0.45,
+    "tags": [
+      "carry",
+      "magic_damage",
+      "melee",
+      "physical_damage",
+      "push",
+      "sustain",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "armor",
+      "early_pressure",
+      "hard_disable",
+      "kiting",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.68,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "patch": "7.41e",
+    "data_quality": "roster_curated_v1",
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Keeper of the Light": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.88
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "heal",
+      "ranged",
+      "save",
+      "support"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 2,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Kez": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.2
+    },
+    "difficulty": 0.8,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "melee",
+      "mobility",
+      "support"
+    ],
+    "weaknesses": [],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Kunkka": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "frontline",
+      "hard_disable",
+      "initiation",
+      "melee",
+      "teamfight",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 3,
+      "wave_clear": 3,
+      "physical_damage": 0,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Largo": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "melee"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Legion Commander": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "frontline",
+      "hard_disable",
+      "initiation",
+      "melee",
+      "physical_damage"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Leshrac": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "magic_damage",
+      "push",
+      "ranged",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 2,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Lich": {
+    "roles": {
+      "pos1": 0.0,
+      "pos2": 0.0,
+      "pos3": 0.0,
+      "pos4": 0.6,
+      "pos5": 0.95
+    },
+    "difficulty": 0.4,
+    "tags": [
+      "lane_support",
+      "magic_damage",
+      "ranged",
+      "save",
+      "support",
+      "teamfight"
+    ],
+    "weaknesses": [
+      "burst",
+      "limited_disable",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "patch": "7.41e",
+    "data_quality": "roster_curated_v1",
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Lifestealer": {
+    "roles": {
+      "pos1": 0.95,
+      "pos2": 0.0,
+      "pos3": 0.0,
+      "pos4": 0.0,
+      "pos5": 0.0
+    },
+    "difficulty": 0.5,
+    "tags": [
+      "anti_tank",
+      "carry",
+      "frontline",
+      "magic_immunity",
+      "melee",
+      "physical_damage",
+      "roshan",
+      "sustain"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "kiting",
+      "limited_wave_clear",
+      "low_mobility",
+      "low_range"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 2,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.68,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.68,
+      "damage_item_dependency": 0.78
+    },
+    "patch": "7.41e",
+    "data_quality": "roster_curated_v1",
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Lina": {
+    "roles": {
+      "pos1": 0.45,
+      "pos2": 0.95,
+      "pos3": 0.2,
+      "pos4": 0.55,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "lane_dominator",
+      "magic_damage",
+      "ranged",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Lion": {
+    "roles": {
+      "pos1": 0.0,
+      "pos2": 0.0,
+      "pos3": 0.0,
+      "pos4": 0.9,
+      "pos5": 0.88
+    },
+    "difficulty": 0.4,
+    "tags": [
+      "burst",
+      "hard_disable",
+      "magic_damage",
+      "pickoff",
+      "ranged",
+      "support"
+    ],
+    "weaknesses": [
+      "burst",
+      "low_mobility",
+      "low_survivability"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "patch": "7.41e",
+    "data_quality": "roster_curated_v1",
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Lone Druid": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.68,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "carry",
+      "melee",
+      "physical_damage",
+      "push",
+      "roshan"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 2,
+      "push": 2,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.68,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Luna": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "carry",
+      "late_game_scaling",
+      "physical_damage",
+      "push",
+      "ranged",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "farm_dependency",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 2,
+      "teamfight": 0,
+      "scaling": 3
+    },
+    "item_profile": {
+      "farm_dependency": 0.82,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Lycan": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "melee",
+      "physical_damage",
+      "push",
+      "roshan"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 2,
+      "push": 2,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Magnus": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.68,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "hard_disable",
+      "initiation",
+      "melee",
+      "teamfight",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 0,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Marci": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "melee",
+      "mobility",
+      "support"
+    ],
+    "weaknesses": [],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Mars": {
+    "roles": {
+      "pos1": 0.0,
+      "pos2": 0.0,
+      "pos3": 0.95,
+      "pos4": 0.0,
+      "pos5": 0.0
+    },
+    "difficulty": 0.65,
+    "tags": [
+      "frontline",
+      "hard_disable",
+      "initiation",
+      "melee",
+      "physical_damage",
+      "teamfight"
+    ],
+    "weaknesses": [
+      "kiting",
+      "low_mobility",
+      "mana_pressure"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "patch": "7.41e",
+    "data_quality": "roster_curated_v1",
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Medusa": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "carry",
+      "late_game_scaling",
+      "physical_damage",
+      "ranged",
+      "teamfight",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "farm_dependency",
+      "kiting",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 3
+    },
+    "item_profile": {
+      "farm_dependency": 0.82,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.68,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Meepo": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.8,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "melee"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Mirana": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "mobility",
+      "ranged",
+      "support"
+    ],
+    "weaknesses": [],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Monkey King": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "carry",
+      "melee",
+      "mobility",
+      "physical_damage"
+    ],
+    "weaknesses": [
+      "early_pressure"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.68,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Morphling": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.8,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "carry",
+      "late_game_scaling",
+      "melee",
+      "mobility",
+      "physical_damage"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "farm_dependency",
+      "hard_disable"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 3
+    },
+    "item_profile": {
+      "farm_dependency": 0.82,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.35,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Muerta": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "carry",
+      "late_game_scaling",
+      "physical_damage",
+      "ranged"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "farm_dependency",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 3
+    },
+    "item_profile": {
+      "farm_dependency": 0.82,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Naga Siren": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.68,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "carry",
+      "late_game_scaling",
+      "melee",
+      "physical_damage",
+      "push",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "farm_dependency",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 2,
+      "teamfight": 0,
+      "scaling": 3
+    },
+    "item_profile": {
+      "farm_dependency": 0.82,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Nature's Prophet": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "melee",
+      "push"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 2,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Necrophos": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "anti_regeneration",
+      "anti_tank",
+      "frontline",
+      "heal",
+      "lane_dominator",
+      "magic_damage",
+      "ranged",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 3,
+      "wave_clear": 3,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Night Stalker": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "frontline",
+      "initiation",
+      "melee",
+      "physical_damage"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 0,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Nyx Assassin": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "hard_disable",
+      "magic_damage",
+      "melee",
+      "support"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Ogre Magi": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.88
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "frontline",
+      "hard_disable",
+      "magic_damage",
+      "melee",
+      "support"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 3,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Omniknight": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.88
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "heal",
+      "melee",
+      "save",
+      "support"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 2,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Oracle": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.88
+    },
+    "difficulty": 0.8,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "heal",
+      "ranged",
+      "save",
+      "support"
+    ],
+    "weaknesses": [
+      "burst",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 2,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Outworld Destroyer": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "magic_damage",
+      "ranged"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Pangolier": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.68,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "hard_disable",
+      "initiation",
+      "melee",
+      "mobility",
+      "wave_clear"
+    ],
+    "weaknesses": [],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 0,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Phantom Assassin": {
+    "roles": {
+      "pos1": 0.95,
+      "pos2": 0.0,
+      "pos3": 0.0,
+      "pos4": 0.0,
+      "pos5": 0.0
+    },
+    "difficulty": 0.65,
+    "tags": [
+      "assassin",
+      "burst",
+      "carry",
+      "evasion",
+      "late_game_scaling",
+      "melee",
+      "mobility",
+      "physical_damage",
+      "roshan"
+    ],
+    "weaknesses": [
+      "anti_evasion",
+      "armor",
+      "early_pressure",
+      "farm_dependency",
+      "hard_disable"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 2,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 3
+    },
+    "patch": "7.41e",
+    "data_quality": "roster_curated_v1",
+    "item_profile": {
+      "farm_dependency": 0.82,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.35,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Phantom Lancer": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "carry",
+      "late_game_scaling",
+      "melee",
+      "physical_damage",
+      "push",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "farm_dependency",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 2,
+      "teamfight": 0,
+      "scaling": 3
+    },
+    "item_profile": {
+      "farm_dependency": 0.82,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Phoenix": {
+    "roles": {
+      "pos1": 0.0,
+      "pos2": 0.0,
+      "pos3": 0.55,
+      "pos4": 0.9,
+      "pos5": 0.88
+    },
+    "difficulty": 0.68,
+    "tags": [
+      "anti_attack_speed",
+      "follow_up",
+      "heal",
+      "magic_damage",
+      "mobility",
+      "ranged",
+      "support",
+      "teamfight"
+    ],
+    "weaknesses": [
+      "attack_speed",
+      "burst",
+      "silence"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "patch": "7.41e",
+    "data_quality": "roster_curated_v1",
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Primal Beast": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "frontline",
+      "initiation",
+      "melee"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 0,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Puck": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.8,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "initiation",
+      "magic_damage",
+      "mobility",
+      "ranged"
+    ],
+    "weaknesses": [],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Pudge": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.25,
+      "pos3": 0.8,
+      "pos4": 0.9,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "frontline",
+      "hard_disable",
+      "initiation",
+      "melee",
+      "support"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Pugna": {
+    "roles": {
+      "pos1": 0.0,
+      "pos2": 0.88,
+      "pos3": 0.0,
+      "pos4": 0.7,
+      "pos5": 0.4
+    },
+    "difficulty": 0.6,
+    "tags": [
+      "anti_magic",
+      "magic_damage",
+      "push",
+      "ranged",
+      "save",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "burst",
+      "hard_disable",
+      "low_armor",
+      "low_mobility",
+      "physical_burst"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 2,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 2,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "patch": "7.41e",
+    "data_quality": "roster_curated_v1",
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Queen of Pain": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.68,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "magic_damage",
+      "mobility",
+      "ranged"
+    ],
+    "weaknesses": [
+      "hard_disable"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.35,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Razor": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.88,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "carry",
+      "lane_dominator",
+      "physical_damage",
+      "ranged"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.68,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Riki": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "carry",
+      "melee",
+      "mobility",
+      "physical_damage"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "hard_disable"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.68,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.35,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Ringmaster": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.88
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "ranged",
+      "support",
+      "teamfight"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Rubick": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.2
+    },
+    "difficulty": 0.8,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "hard_disable",
+      "magic_damage",
+      "ranged",
+      "support"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Sand King": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "hard_disable",
+      "initiation",
+      "magic_damage",
+      "melee",
+      "teamfight",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Shadow Demon": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.88
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "hard_disable",
+      "magic_damage",
+      "ranged",
+      "save",
+      "support"
+    ],
+    "weaknesses": [
+      "burst",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 2,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Shadow Fiend": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "magic_damage",
+      "ranged",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Shadow Shaman": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.88
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "hard_disable",
+      "magic_damage",
+      "push",
+      "ranged",
+      "support"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 2,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Silencer": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.78,
+      "pos5": 0.92
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "ranged",
+      "support"
+    ],
+    "weaknesses": [
+      "burst",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Skywrath Mage": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "magic_damage",
+      "ranged",
+      "support"
+    ],
+    "weaknesses": [
+      "burst",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Slardar": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "anti_tank",
+      "frontline",
+      "hard_disable",
+      "initiation",
+      "melee",
+      "physical_damage",
+      "roshan"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 2,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Slark": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.0,
+      "pos3": 0.0,
+      "pos4": 0.0,
+      "pos5": 0.0
+    },
+    "difficulty": 0.68,
+    "tags": [
+      "assassin",
+      "carry",
+      "dispel",
+      "late_game_scaling",
+      "melee",
+      "mobility",
+      "physical_damage",
+      "pickoff"
+    ],
+    "weaknesses": [
+      "aoe_control",
+      "burst",
+      "early_pressure",
+      "farm_dependency",
+      "hard_disable"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 3
+    },
+    "item_profile": {
+      "farm_dependency": 0.82,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.35,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "patch": "7.41e",
+    "data_quality": "roster_curated_v1",
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Snapfire": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.88
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "magic_damage",
+      "ranged",
+      "support",
+      "teamfight",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Sniper": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "carry",
+      "lane_dominator",
+      "late_game_scaling",
+      "physical_damage",
+      "push",
+      "ranged"
+    ],
+    "weaknesses": [
+      "farm_dependency",
+      "hard_disable",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 2,
+      "teamfight": 0,
+      "scaling": 3
+    },
+    "item_profile": {
+      "farm_dependency": 0.82,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.35,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Spectre": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "carry",
+      "late_game_scaling",
+      "melee",
+      "physical_damage"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "farm_dependency",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 3
+    },
+    "item_profile": {
+      "farm_dependency": 0.82,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Spirit Breaker": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.86,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "frontline",
+      "hard_disable",
+      "initiation",
+      "melee",
+      "mobility",
+      "support"
+    ],
+    "weaknesses": [],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Storm Spirit": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.68,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "initiation",
+      "magic_damage",
+      "melee",
+      "mobility"
+    ],
+    "weaknesses": [
+      "hard_disable"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.35,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Sven": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "carry",
+      "frontline",
+      "hard_disable",
+      "melee",
+      "physical_damage",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "kiting",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 3,
+      "frontline": 3,
+      "wave_clear": 3,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.68,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.68,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Techies": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "magic_damage",
+      "ranged",
+      "support",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "burst",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Templar Assassin": {
+    "roles": {
+      "pos1": 0.72,
+      "pos2": 0.96,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.68,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "carry",
+      "lane_dominator",
+      "physical_damage",
+      "ranged",
+      "roshan"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 2,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.68,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Terrorblade": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "carry",
+      "late_game_scaling",
+      "melee",
+      "physical_damage",
+      "push",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "farm_dependency",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 2,
+      "teamfight": 0,
+      "scaling": 3
+    },
+    "item_profile": {
+      "farm_dependency": 0.82,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Tidehunter": {
+    "roles": {
+      "pos1": 0.0,
+      "pos2": 0.0,
+      "pos3": 0.95,
+      "pos4": 0.0,
+      "pos5": 0.0
+    },
+    "difficulty": 0.4,
+    "tags": [
+      "frontline",
+      "hard_disable",
+      "initiation",
+      "melee",
+      "physical_damage",
+      "teamfight",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "break",
+      "kiting",
+      "long_cooldown",
+      "low_mobility",
+      "mana_pressure"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.68,
+      "damage_item_dependency": 0.28
+    },
+    "patch": "7.41e",
+    "data_quality": "roster_curated_v1",
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Timbersaw": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.68,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "anti_tank",
+      "frontline",
+      "melee",
+      "mobility",
+      "wave_clear"
+    ],
+    "weaknesses": [],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 3,
+      "wave_clear": 3,
+      "physical_damage": 0,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Tinker": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.8,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "magic_damage",
+      "ranged"
+    ],
+    "weaknesses": [
+      "hard_disable",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.35,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Tiny": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "hard_disable",
+      "initiation",
+      "melee",
+      "physical_damage",
+      "support"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 1,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Treant Protector": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.88
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "hard_disable",
+      "heal",
+      "melee",
+      "save",
+      "support",
+      "teamfight"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 2,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Troll Warlord": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "carry",
+      "late_game_scaling",
+      "melee",
+      "physical_damage",
+      "roshan"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "farm_dependency",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 2,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 3
+    },
+    "item_profile": {
+      "farm_dependency": 0.82,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Tusk": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "hard_disable",
+      "initiation",
+      "melee",
+      "mobility",
+      "support"
+    ],
+    "weaknesses": [],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Underlord": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "frontline",
+      "melee",
+      "teamfight",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 3,
+      "wave_clear": 3,
+      "physical_damage": 0,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Undying": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.86,
+      "pos5": 0.88
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "frontline",
+      "lane_dominator",
+      "melee",
+      "support"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Ursa": {
+    "roles": {
+      "pos1": 0.95,
+      "pos2": 0.0,
+      "pos3": 0.0,
+      "pos4": 0.0,
+      "pos5": 0.0
+    },
+    "difficulty": 0.55,
+    "tags": [
+      "anti_tank",
+      "burst",
+      "carry",
+      "frontline",
+      "lane_fighter",
+      "melee",
+      "physical_damage",
+      "roshan"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "hard_disable",
+      "kiting",
+      "low_mobility",
+      "mobility_requirement"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 2,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.68,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.68,
+      "damage_item_dependency": 0.78
+    },
+    "patch": "7.41e",
+    "data_quality": "roster_curated_v1",
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Vengeful Spirit": {
+    "roles": {
+      "pos1": 0.0,
+      "pos2": 0.0,
+      "pos3": 0.0,
+      "pos4": 0.9,
+      "pos5": 0.88
+    },
+    "difficulty": 0.45,
+    "tags": [
+      "hard_disable",
+      "initiation",
+      "melee",
+      "physical_amplification",
+      "save",
+      "support"
+    ],
+    "weaknesses": [
+      "low_mobility",
+      "low_range",
+      "low_survivability"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 2,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 1
+    },
+    "patch": "7.41e",
+    "data_quality": "roster_curated_v1",
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Venomancer": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.86,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "magic_damage",
+      "ranged",
+      "support",
+      "teamfight",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Viper": {
+    "roles": {
+      "pos1": 0.0,
+      "pos2": 0.9,
+      "pos3": 0.88,
+      "pos4": 0.0,
+      "pos5": 0.0
+    },
+    "difficulty": 0.4,
+    "tags": [
+      "anti_regeneration",
+      "anti_tank",
+      "break",
+      "frontline",
+      "lane_dominator",
+      "magic_damage",
+      "ranged"
+    ],
+    "weaknesses": [
+      "burst",
+      "long_range",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "patch": "7.41e",
+    "data_quality": "roster_curated_v1",
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Visage": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "physical_damage",
+      "push",
+      "ranged"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 2,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Void Spirit": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.68,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "initiation",
+      "magic_damage",
+      "melee",
+      "mobility"
+    ],
+    "weaknesses": [],
+    "team_contributions": {
+      "initiation": 3,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Warlock": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.88
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "heal",
+      "magic_damage",
+      "ranged",
+      "support",
+      "teamfight"
+    ],
+    "weaknesses": [
+      "burst",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Weaver": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "carry",
+      "melee",
+      "mobility",
+      "physical_damage",
+      "support"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "hard_disable"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 1,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.68,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.35,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Windranger": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "mobility",
+      "ranged",
+      "support"
+    ],
+    "weaknesses": [
+      "hard_disable"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 1,
+      "save": 0,
+      "mobility": 2,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.35,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Winter Wyvern": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.2,
+      "pos3": 0.2,
+      "pos4": 0.86,
+      "pos5": 0.88
+    },
+    "difficulty": 0.68,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "hard_disable",
+      "magic_damage",
+      "ranged",
+      "save",
+      "support",
+      "teamfight"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 2,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Witch Doctor": {
+    "roles": {
+      "pos1": 0.0,
+      "pos2": 0.0,
+      "pos3": 0.0,
+      "pos4": 0.86,
+      "pos5": 0.9
+    },
+    "difficulty": 0.5,
+    "tags": [
+      "follow_up",
+      "hard_disable",
+      "heal",
+      "magic_damage",
+      "ranged",
+      "support",
+      "teamfight"
+    ],
+    "weaknesses": [
+      "burst",
+      "low_mobility",
+      "low_survivability",
+      "silence"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 3,
+      "frontline": 0,
+      "wave_clear": 0,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 3,
+      "scaling": 1
+    },
+    "item_profile": {
+      "farm_dependency": 0.22,
+      "bkb_dependency": 0.35,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.28
+    },
+    "patch": "7.41e",
+    "data_quality": "roster_curated_v1",
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Wraith King": {
+    "roles": {
+      "pos1": 0.9,
+      "pos2": 0.2,
+      "pos3": 0.88,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "carry",
+      "frontline",
+      "hard_disable",
+      "melee",
+      "physical_damage",
+      "roshan"
+    ],
+    "weaknesses": [
+      "early_pressure",
+      "kiting",
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 3,
+      "frontline": 3,
+      "wave_clear": 0,
+      "physical_damage": 3,
+      "magic_damage": 0,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 2,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.68,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.68,
+      "damage_item_dependency": 0.78
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  },
+  "Zeus": {
+    "roles": {
+      "pos1": 0.2,
+      "pos2": 0.88,
+      "pos3": 0.2,
+      "pos4": 0.2,
+      "pos5": 0.2
+    },
+    "difficulty": 0.5,
+    "data_quality": "roster_curated_v1",
+    "patch": "7.41e",
+    "tags": [
+      "burst",
+      "magic_damage",
+      "ranged",
+      "wave_clear"
+    ],
+    "weaknesses": [
+      "low_mobility"
+    ],
+    "team_contributions": {
+      "initiation": 0,
+      "hard_disable": 0,
+      "frontline": 0,
+      "wave_clear": 3,
+      "physical_damage": 0,
+      "magic_damage": 3,
+      "save": 0,
+      "mobility": 0,
+      "roshan": 0,
+      "push": 0,
+      "teamfight": 0,
+      "scaling": 2
+    },
+    "item_profile": {
+      "farm_dependency": 0.48,
+      "bkb_dependency": 0.68,
+      "dispel_dependency": 0.18,
+      "mobility_dependency": 0.3,
+      "damage_item_dependency": 0.58
+    },
+    "profile_scope": "roles_tags_weaknesses_composition_itemization"
+  }
+}

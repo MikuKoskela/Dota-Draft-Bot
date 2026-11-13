@@ -1,145 +1,155 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
-import HeroSearch from "../components/HeroSearch";
 import Team from "../components/Team";
 import RecommendationCard from "../components/RecommendationCard";
 
-import { analyzeDraft } from "../api/api";
+import { getHeroProfile, getHeroes, getMeta, rankDraft } from "../api/api";
 import HeroGrid from "../components/HeroGrid";
+import HeroProfileModal from "../components/HeroProfileModal";
 
 const MAX_ENEMY_HEROES = 5;
 const MAX_OWN_HEROES = 4;
 const positions = [
     {
-        id: "1",
+        id: "pos1",
         name: "Carry",
         short: "POS 1",
     },
     {
-        id: "2",
+        id: "pos2",
         name: "Mid",
         short: "POS 2",
     },
     {
-        id: "3",
+        id: "pos3",
         name: "Offlane",
         short: "POS 3",
     },
     {
-        id: "4",
+        id: "pos4",
         name: "Soft Support",
         short: "POS 4",
     },
     {
-        id: "5",
+        id: "pos5",
         name: "Hard Support",
         short: "POS 5",
     },
 ];
 
+const DEFAULT_DRAFT_PHASE = "mid";
+const emptyTeam = () => Object.fromEntries(positions.map(({ id }) => [id, null]));
+const selectedCount = (team) => Object.values(team).filter(Boolean).length;
+
 export default function DraftPage() {
-    const [enemyTeam, setEnemyTeam] = useState([]);
-    const [ownTeam, setOwnTeam] = useState([]);
-
+    const [enemyTeam, setEnemyTeam] = useState(emptyTeam);
+    const [ownTeam, setOwnTeam] = useState(emptyTeam);
+    const [heroes, setHeroes] = useState([]);
+    const [meta, setMeta] = useState(null);
     const [analysis, setAnalysis] = useState(null);
-
-    const [activePosition, setActivePosition] =
-        useState("general");
-
     const [loading, setLoading] = useState(false);
+    const [loadingRoster, setLoadingRoster] = useState(true);
     const [error, setError] = useState("");
+    const [profileModal, setProfileModal] = useState(null);
+
+    useEffect(() => {
+        Promise.all([getHeroes(), getMeta()])
+            .then(([heroList, engineMeta]) => {
+                setHeroes(heroList);
+                setMeta(engineMeta);
+            })
+            .catch((err) => setError(err.message || "Could not load draft data."))
+            .finally(() => setLoadingRoster(false));
+    }, []);
 
     const allSelectedHeroes = useMemo(
-        () => [...enemyTeam, ...ownTeam],
+        () => [
+            ...Object.values(enemyTeam),
+            ...Object.values(ownTeam),
+        ].filter(Boolean),
         [enemyTeam, ownTeam]
     );
+    const enemyPicksComplete = selectedCount(enemyTeam) === MAX_ENEMY_HEROES;
+    const activeSelectionSide = enemyPicksComplete ? "own" : "enemy";
+    const activeSelectionRole = positions.find(({ id }) =>
+        !(activeSelectionSide === "enemy" ? enemyTeam[id] : ownTeam[id])
+    )?.id ?? null;
+    const roleConfidenceFloor = meta?.role_min_confidence ?? 0.45;
 
-function addEnemyHero(hero) {
-    setEnemyTeam((current) => {
-        if (typeof hero !== "string") {
-        console.error("Expected hero ID string, got:", hero);
-        return;
-    }
-        if (current.length >= MAX_ENEMY_HEROES) {
-            return current;
-        }
-
-        if (current.includes(hero) || ownTeam.includes(hero)) {
-            return current;
-        }
-
+    function addEnemyHero(hero) {
+        const nextPosition = positions.find(({ id }) => !enemyTeam[id]);
+        if (!nextPosition) return;
+        if (allSelectedHeroes.includes(hero)) return;
+        setEnemyTeam((current) => ({ ...current, [nextPosition.id]: hero }));
         setAnalysis(null);
-        return [...current, hero];
-    });
-}
-
-function addOwnHero(hero) {
-    setOwnTeam((current) => {
-        if (typeof hero !== "string") {
-        console.error("Expected hero ID string, got:", hero);
-        return;
+        setError("");
     }
-        if (current.length >= MAX_OWN_HEROES) {
-            return current;
-        }
 
-        if (current.includes(hero) || enemyTeam.includes(hero)) {
-            return current;
+    function addOwnHero(hero) {
+        if (!enemyPicksComplete) {
+            setError("Complete all five enemy picks before selecting your team.");
+            return;
         }
-
+        const nextPosition = positions.find(({ id }) => !ownTeam[id]);
+        if (!nextPosition || selectedCount(ownTeam) >= MAX_OWN_HEROES) return;
+        if (allSelectedHeroes.includes(hero)) return;
+        const updatedTeam = { ...ownTeam, [nextPosition.id]: hero };
+        setOwnTeam(updatedTeam);
         setAnalysis(null);
-        return [...current, hero];
-    });
-}
+        setError("");
+        if (selectedCount(updatedTeam) === MAX_OWN_HEROES) {
+            requestFinalPick(updatedTeam, enemyTeam, DEFAULT_DRAFT_PHASE);
+        }
+    }
 
     function removeEnemyHero(hero) {
-        setEnemyTeam((current) =>
-            current.filter(
-                (currentHero) => currentHero !== hero
-            )
-        );
-
+        setEnemyTeam((current) => Object.fromEntries(
+            Object.entries(current).map(([role, currentHero]) => [
+                role,
+                currentHero === hero ? null : currentHero,
+            ])
+        ));
         setAnalysis(null);
     }
 
     function removeOwnHero(hero) {
-        setOwnTeam((current) =>
-            current.filter(
-                (currentHero) => currentHero !== hero
-            )
-        );
-
+        setOwnTeam((current) => Object.fromEntries(
+            Object.entries(current).map(([role, currentHero]) => [
+                role,
+                currentHero === hero ? null : currentHero,
+            ])
+        ));
         setAnalysis(null);
     }
 
     function resetDraft() {
-        setEnemyTeam([]);
-        setOwnTeam([]);
+        setEnemyTeam(emptyTeam());
+        setOwnTeam(emptyTeam());
         setAnalysis(null);
         setError("");
-        setActivePosition("general");
+        setProfileModal(null);
     }
 
-    async function handleAnalyze() {
-        if (enemyTeam.length === 0) {
-            setError(
-                "Add at least one enemy hero before analyzing."
-            );
-
-            return;
-        }
-
+    async function requestFinalPick(ownDraft, enemyDraft, phase) {
+        const targetRole = positions.find(({ id }) => !ownDraft[id]);
+        if (!targetRole) return;
         try {
             setLoading(true);
             setError("");
-
-            const result = await analyzeDraft(
-                enemyTeam,
-                ownTeam
+            const picks = await rankDraft(
+                ownDraft,
+                enemyDraft,
+                targetRole.id,
+                phase
             );
-
-            setAnalysis(result);
-            setActivePosition("general");
+            setAnalysis({
+                targetRole: targetRole.id,
+                recommendations: picks.map((pick) => ({
+                    ...pick,
+                    position: targetRole.id,
+                    position_name: targetRole.name,
+                })),
+            });
         } catch (err) {
             console.error(err);
 
@@ -152,12 +162,35 @@ function addOwnHero(hero) {
         }
     }
 
-    const recommendations =
-        activePosition === "general"
-            ? analysis?.recommendations?.general ?? []
-            : analysis?.recommendations?.positions?.[
-                  activePosition
-              ] ?? [];
+    function handleAnalyze() {
+        if (selectedCount(enemyTeam) !== MAX_ENEMY_HEROES) {
+            setError("Add all five enemy heroes first.");
+            return;
+        }
+        if (selectedCount(ownTeam) !== MAX_OWN_HEROES) {
+            setError("Add four friendly heroes to get the final-pick ranking.");
+            return;
+        }
+        requestFinalPick(ownTeam, enemyTeam, DEFAULT_DRAFT_PHASE);
+    }
+
+    async function openHeroProfile(hero) {
+        setProfileModal({ hero, profile: null, loading: true, error: "" });
+        try {
+            const profile = await getHeroProfile(hero);
+            setProfileModal({ hero, profile, loading: false, error: "" });
+        } catch (err) {
+            setProfileModal({
+                hero,
+                profile: null,
+                loading: false,
+                error: err.message || "Could not load hero profile.",
+            });
+        }
+    }
+
+    const recommendations = analysis?.recommendations ?? [];
+    const targetRole = positions.find(({ id }) => !ownTeam[id]);
 
     return (
         <main className="min-h-screen overflow-x-hidden">
@@ -196,23 +229,26 @@ function addOwnHero(hero) {
                                     items-center
                                     justify-center
                                     rounded-lg
-                                    bg-blue-600
+                                    bg-gradient-to-br
+                                    from-red-700
+                                    to-red-950
                                     text-sm
                                     font-black
                                     shadow-lg
-                                    shadow-blue-900/30
+                                    shadow-red-950/50
                                 "
                             >
                                 D
                             </div>
 
                             <h1 className="text-sm font-bold tracking-wide text-white sm:text-base">
-                                DRAFT ASSISTANT
+                                DOTA 2 DRAFT ASSISTANT (BETA)
                             </h1>
                         </div>
 
                         <p className="mt-0.5 hidden text-[10px] text-slate-500 sm:block">
                             Dota 2 Position Draft Analyzer
+                            {meta?.game_patch ? ` · Patch ${meta.game_patch}` : ""}
                         </p>
                     </div>
 
@@ -261,8 +297,8 @@ function addOwnHero(hero) {
                         sm:mb-8
                     "
                 >
-                    <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.25em] text-blue-400">
-                        Draft phase
+                    <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.25em] text-amber-400">
+                        Dota 2 · Draft Strategy
                     </p>
 
                     <h2
@@ -288,10 +324,7 @@ function addOwnHero(hero) {
                             sm:text-sm
                         "
                     >
-                        Select the enemy lineup and your
-                        current team. The analyzer will
-                        calculate matchup, counter, role
-                        and synergy scores.
+                        Fill the enemy lineup first. The eligible hero pool advances through positions automatically, then ranks your final pick after four friendly picks.
                     </p>
                 </section>
 
@@ -301,8 +334,8 @@ function addOwnHero(hero) {
                         relative
                         rounded-3xl
                         border
-                        border-slate-800
-                        bg-slate-900/30
+                        border-[#39352e]
+                        bg-[#111213]/80
                         p-2
                         shadow-2xl
                         sm:p-4
@@ -349,21 +382,6 @@ function addOwnHero(hero) {
                                 side="enemy"
                                 maxHeroes={MAX_ENEMY_HEROES}
                             />
-
-                            <div className="mt-3">
-                                <HeroSearch
-                                    selectedHeroes={
-                                        allSelectedHeroes
-                                    }
-                                    onSelect={
-                                        addEnemyHero
-                                    }
-                                    disabled={
-                                        enemyTeam.length >=
-                                        MAX_ENEMY_HEROES
-                                    }
-                                />
-                            </div>
                         </div>
 
                         {/* VS */}
@@ -395,8 +413,8 @@ function addOwnHero(hero) {
                                     transition-all
                                     duration-500
                                     hover:scale-110
-                                    hover:border-blue-500/50
-                                    hover:text-blue-400
+                                    hover:border-amber-500/50
+                                    hover:text-amber-300
                                     sm:h-12
                                     sm:w-12
                                 "
@@ -414,19 +432,11 @@ function addOwnHero(hero) {
                                 side="own"
                                 maxHeroes={MAX_OWN_HEROES}
                             />
-
-                            <div className="mt-3">
-                                <HeroSearch
-                                    selectedHeroes={
-                                        allSelectedHeroes
-                                    }
-                                    onSelect={addOwnHero}
-                                    disabled={
-                                        ownTeam.length >=
-                                        MAX_OWN_HEROES
-                                    }
-                                />
-                            </div>
+                            {!enemyPicksComplete && (
+                                <p className="mt-2 text-[10px] text-amber-400/80">
+                                    Fill enemy positions in order to unlock your four picks.
+                                </p>
+                            )}
                         </div>
                     </div>
 
@@ -440,53 +450,49 @@ function addOwnHero(hero) {
                             justify-center
                             gap-3
                             border-t
-                            border-slate-800
+                            border-[#39352e]
                             pt-5
                             sm:flex-row
                             lg:mt-6
                             lg:pt-6
                         "
                     >
-                        <div className="text-center sm:text-left">
-                            <p className="text-xs font-semibold text-slate-300">
-                                Ready to analyze?
-                            </p>
-
-                            <p className="mt-1 text-[10px] text-slate-600">
-                                {enemyTeam.length}/{MAX_ENEMY_HEROES}
-                                enemy picks ·{" "}
-                                {ownTeam.length}/{MAX_OWN_HEROES}
-                                friendly picks
-                            </p>
-                        </div>
-
                         <button
                             type="button"
                             onClick={handleAnalyze}
                             disabled={
                                 loading ||
-                                enemyTeam.length === 0
+                                loadingRoster ||
+                                selectedCount(ownTeam) !== MAX_OWN_HEROES ||
+                                !enemyPicksComplete
                             }
                             className="
                                 w-full
                                 rounded-xl
-                                bg-blue-600
+                                bg-gradient-to-r
+                                from-red-700
+                                to-red-600
                                 px-6
                                 py-3
                                 text-sm
                                 font-bold
                                 text-white
                                 shadow-lg
-                                shadow-blue-950/30
+                                shadow-red-950/40
                                 transition-all
                                 duration-300
-                                hover:bg-blue-500
-                                hover:shadow-blue-900/40
+                                hover:from-red-600
+                                hover:to-red-500
+                                hover:shadow-red-900/40
                                 active:scale-[0.98]
                                 disabled:cursor-not-allowed
                                 disabled:bg-slate-800
+                                disabled:from-slate-800
+                                disabled:to-slate-800
                                 disabled:text-slate-600
                                 disabled:shadow-none
+                                disabled:hover:from-slate-800
+                                disabled:hover:to-slate-800
                                 sm:w-auto
                             "
                         >
@@ -516,7 +522,7 @@ function addOwnHero(hero) {
                     )}
                 </section>
                 
-                {/*Heroes*/}
+                {/* Eligible heroes */}
                 <section
                     className="
                         mt-8
@@ -525,8 +531,27 @@ function addOwnHero(hero) {
                         sm:mt-10
                     "
                 >
-                    <HeroGrid addOwnHero={addOwnHero} addEnemyHero={addEnemyHero} />
-                    
+                    {enemyPicksComplete && selectedCount(ownTeam) === MAX_OWN_HEROES ? (
+                        <div className="rounded-2xl border border-amber-500/20 bg-amber-500/[0.03] px-4 py-8 text-center">
+                            <p className="text-sm font-bold text-slate-200">
+                                Your four picks are set · Pos {targetRole?.id.slice(-1)} {targetRole?.name} is the final pick
+                            </p>
+                            <p className="mt-1 text-xs text-slate-500">
+                                {loading
+                                    ? "Ranking position-eligible heroes…"
+                                    : "Your ranked recommendations are below."}
+                            </p>
+                        </div>
+                    ) : (
+                        <HeroGrid
+                            heroes={heroes}
+                            position={activeSelectionRole}
+                            side={activeSelectionSide}
+                            selectedHeroes={allSelectedHeroes}
+                            minRoleConfidence={roleConfidenceFloor}
+                            onSelect={activeSelectionSide === "enemy" ? addEnemyHero : addOwnHero}
+                        />
+                    )}
                 </section>
 
 
@@ -544,13 +569,18 @@ function addOwnHero(hero) {
                     <div className="mb-4">
                         <div className="flex items-end justify-between">
                             <div>
-                                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-400">
+                                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-amber-400">
                                     Analysis
                                 </p>
 
                                 <h2 className="mt-1 text-xl font-black text-white sm:text-2xl">
-                                    Recommended picks
+                                    Final pick recommendations
                                 </h2>
+                                <p className="mt-1 text-[10px] text-slate-500">
+                                    {targetRole
+                                        ? `Unfilled role: Pos ${targetRole.id.slice(-1)} · ${targetRole.name}`
+                                        : "All positions are filled"}
+                                </p>
                             </div>
 
                             {analysis && (
@@ -560,80 +590,59 @@ function addOwnHero(hero) {
                                 </span>
                             )}
                         </div>
-                    </div>
-
-                    {/* Position navigation */}
-                    <div
-                        className="
-                            mb-4
-                            flex
-                            gap-2
-                            overflow-x-auto
-                            pb-1
-                        "
-                    >
-                        <button
-                            type="button"
-                            onClick={() =>
-                                setActivePosition(
-                                    "general"
-                                )
-                            }
-                            className={`
-                                shrink-0
-                                rounded-lg
-                                px-3
-                                py-2
-                                text-xs
-                                font-semibold
-                                transition-all
-                                duration-300
-                                ${
-                                    activePosition ===
-                                    "general"
-                                        ? "bg-blue-600 text-white shadow-lg shadow-blue-950/30"
-                                        : "border border-slate-800 bg-slate-900 text-slate-500 hover:text-slate-200"
-                                }
-                            `}
-                        >
-                            Top Picks
-                        </button>
-
-                        {positions.map((position) => (
-                            <button
-                                key={position.id}
-                                type="button"
-                                onClick={() =>
-                                    setActivePosition(
-                                        position.id
-                                    )
-                                }
-                                className={`
-                                    shrink-0
-                                    rounded-lg
-                                    px-3
-                                    py-2
-                                    text-xs
-                                    font-semibold
-                                    transition-all
-                                    duration-300
-                                    ${
-                                        activePosition ===
-                                        position.id
-                                            ? "bg-blue-600 text-white shadow-lg shadow-blue-950/30"
-                                            : "border border-slate-800 bg-slate-900 text-slate-500 hover:text-slate-200"
-                                    }
-                                `}
-                            >
-                                <span className="sm:hidden">
-                                    {position.short}
-                                </span>
-
-                                <span className="hidden sm:inline">
-                                    {position.name}
-                                </span>
-                            </button>
-                        ))}
+                        {meta && (
+                            <details className="mb-4 rounded-xl border border-slate-800 bg-slate-950/50 p-3">
+                                <summary className="cursor-pointer text-xs font-semibold text-slate-400">
+                                    Engine v{meta.engine_version} · Patch {meta.game_patch} ·{" "}
+                                    {meta.loaded_heroes} heroes · {meta.directed_matchups.toLocaleString()} matchups
+                                </summary>
+                                <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                                    <div>
+                                        <p className="mb-1 text-[9px] font-bold uppercase tracking-wider text-slate-500">
+                                            Score component weights
+                                        </p>
+                                        <div className="space-y-1">
+                                            {Object.entries(meta.scoring.component_weights).map(([name, value]) => (
+                                                <div key={name} className="flex justify-between text-[10px] capitalize">
+                                                    <span className="text-slate-500">{name.replaceAll("_", " ")}</span>
+                                                    <span className="text-slate-300">{(value * 100).toFixed(0)}%</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p className="mb-1 text-[9px] font-bold uppercase tracking-wider text-slate-500">
+                                            Lane component weights
+                                        </p>
+                                        <div className="space-y-1">
+                                            {Object.entries(meta.scoring.lane_component_weights).map(([name, value]) => (
+                                                <div key={name} className="flex justify-between text-[10px] capitalize">
+                                                    <span className="text-slate-500">{name.replaceAll("_", " ")}</span>
+                                                    <span className="text-slate-300">{(value * 100).toFixed(0)}%</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p className="mb-1 text-[9px] font-bold uppercase tracking-wider text-slate-500">
+                                            Matchup confidence and phase risk
+                                        </p>
+                                        <div className="space-y-1 text-[10px] text-slate-400">
+                                            <p>Curated: {meta.curated_matchups.toLocaleString()}</p>
+                                            <p>Inferred: {meta.inferred_matchups.toLocaleString()}</p>
+                                            <p>Role confidence floor: {meta.role_min_confidence}</p>
+                                            <p>{meta.scoring.graph_rule_weighting}</p>
+                                            {Object.entries(meta.scoring.matchup_confidence_multipliers).map(([name, value]) => (
+                                                <p key={`confidence-${name}`}>Matchup {name}: {value}</p>
+                                            ))}
+                                            {Object.entries(meta.scoring.counter_risk_multipliers).map(([name, value]) => (
+                                                <p key={`phase-${name}`} className="capitalize">{name.replaceAll("_", " ")} risk: {value}×</p>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+                            </details>
+                        )}
                     </div>
 
                     {/* Recommendation grid */}
@@ -659,24 +668,21 @@ function addOwnHero(hero) {
                                 </div>
 
                                 <p className="text-sm font-semibold text-slate-500">
-                                    Your recommendations
-                                    will appear here
+                                    Your final-pick recommendations will appear here
                                 </p>
 
                                 <p className="mt-1 text-xs text-slate-700">
-                                    Add enemy heroes and
-                                    analyze the draft.
+                                    Assign four friendly picks to unique positions, then analyze the missing role.
                                 </p>
                             </div>
                         </div>
                     ) : recommendations.length === 0 ? (
                         <div className="rounded-2xl border border-slate-800 bg-slate-950/40 p-8 text-center text-sm text-slate-500">
-                            No recommendations available
-                            for this position.
+                            No recommendations available for the missing position.
                         </div>
                     ) : (
                         <div
-                            key={activePosition}
+                            key={analysis.targetRole}
                             className="
                                 grid
                                 grid-cols-2
@@ -700,6 +706,7 @@ function addOwnHero(hero) {
                                             recommendation
                                         }
                                         rank={index + 1}
+                                        onHeroProfile={openHeroProfile}
                                     />
                                 )
                             )}
@@ -707,6 +714,10 @@ function addOwnHero(hero) {
                     )}
                 </section>
             </div>
+            <HeroProfileModal
+                {...(profileModal || {})}
+                onClose={() => setProfileModal(null)}
+            />
         </main>
     );
 }

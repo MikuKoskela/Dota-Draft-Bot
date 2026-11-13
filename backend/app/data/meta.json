@@ -1,0 +1,29 @@
+{
+  "engine_version": "0.7.0",
+  "game_patch": "7.41e",
+  "patch_verified_from": "Valve Dota 2 official patch/news pages",
+  "hero_roster_source": "Valve Dota 2 official heroes page",
+  "roster_size": 127,
+  "curated_scope": "All 127 heroes have weighted tags and weaknesses, positional roles, 12-part lane maps, early/mid/late power spikes, team and item profiles, base stats, abilities, talents, facets and Aghanim upgrade data. Every directed hero pair is resolvable through curated data, an inverse curated pair, or weighted profile inference.",
+  "warning": "Hero tag/weakness weights and inferred matchups are deterministic heuristic estimates, not current pro-match win-rate or role-frequency statistics. Raw and confidence-adjusted matchup values are exposed separately.",
+  "profile_quality": "ability_enriched_v2",
+  "availability_logic": "Automatically excludes own picks, enemy picks, banned heroes, and heroes below 0.45 confidence for the requested position before ranking.",
+  "ui_default_draft": {
+    "own_team": {
+      "pos1": null,
+      "pos2": "Lina",
+      "pos3": "Axe",
+      "pos4": "Silencer",
+      "pos5": "Jakiro"
+    },
+    "enemy_team": {
+      "pos1": "Pudge",
+      "pos2": "Templar Assassin",
+      "pos3": "Dawnbreaker",
+      "pos4": "Hoodwink",
+      "pos5": "Crystal Maiden"
+    },
+    "target_role": "pos1",
+    "draft_phase": "late"
+  }
+}

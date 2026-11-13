@@ -1,0 +1,327 @@
+{
+  "Ursa": {
+    "Axe": {
+      "lane": {
+        "last_hit": 1.1,
+        "deny": 0.7,
+        "harass": 1.7,
+        "trade": 1.8,
+        "kill_pressure": 1.5,
+        "survivability": 1.1,
+        "sustain": 0.8,
+        "wave_clear": 0.5,
+        "range_advantage": 0.6,
+        "level_2_spike": 0.7,
+        "level_3_spike": 1.0,
+        "level_6_spike": 1.2
+      },
+      "mid_game": 1,
+      "late_game": 0,
+      "reasons": [
+        "strong sustained damage",
+        "good against tanky frontline"
+      ],
+      "lane_aggregate": 2,
+      "patch": "7.41e",
+      "data_quality": "migrated_mvp"
+    },
+    "Lion": {
+      "lane": {
+        "last_hit": 0.55,
+        "deny": 0.35,
+        "harass": 0.85,
+        "trade": 0.9,
+        "kill_pressure": 0.75,
+        "survivability": 0.55,
+        "sustain": 0.4,
+        "wave_clear": 0.25,
+        "range_advantage": 0.3,
+        "level_2_spike": 0.35,
+        "level_3_spike": 0.5,
+        "level_6_spike": 0.6
+      },
+      "mid_game": -1,
+      "late_game": 0,
+      "reasons": [
+        "can pressure Lion",
+        "vulnerable to chain disable"
+      ],
+      "lane_aggregate": 1,
+      "patch": "7.41e",
+      "data_quality": "migrated_mvp"
+    },
+    "Phantom Assassin": {
+      "lane": {
+        "last_hit": 0.55,
+        "deny": 0.35,
+        "harass": 0.85,
+        "trade": 0.9,
+        "kill_pressure": 0.75,
+        "survivability": 0.55,
+        "sustain": 0.4,
+        "wave_clear": 0.25,
+        "range_advantage": 0.3,
+        "level_2_spike": 0.35,
+        "level_3_spike": 0.5,
+        "level_6_spike": 0.6
+      },
+      "mid_game": 1,
+      "late_game": -1,
+      "reasons": [
+        "strong early fighting",
+        "PA can outscale in late game"
+      ],
+      "lane_aggregate": 1,
+      "patch": "7.41e",
+      "data_quality": "migrated_mvp"
+    }
+  },
+  "Juggernaut": {
+    "Axe": {
+      "lane": {
+        "last_hit": 0.55,
+        "deny": 0.35,
+        "harass": 0.85,
+        "trade": 0.9,
+        "kill_pressure": 0.75,
+        "survivability": 0.55,
+        "sustain": 0.4,
+        "wave_clear": 0.25,
+        "range_advantage": 0.3,
+        "level_2_spike": 0.35,
+        "level_3_spike": 0.5,
+        "level_6_spike": 0.6
+      },
+      "mid_game": 0,
+      "late_game": 0,
+      "lane_aggregate": 1,
+      "patch": "7.41e",
+      "data_quality": "migrated_mvp"
+    },
+    "Lion": {
+      "lane": {
+        "last_hit": 1.1,
+        "deny": 0.7,
+        "harass": 1.7,
+        "trade": 1.8,
+        "kill_pressure": 1.5,
+        "survivability": 1.1,
+        "sustain": 0.8,
+        "wave_clear": 0.5,
+        "range_advantage": 0.6,
+        "level_2_spike": 0.7,
+        "level_3_spike": 1.0,
+        "level_6_spike": 1.2
+      },
+      "mid_game": 1,
+      "late_game": 0,
+      "lane_aggregate": 2,
+      "patch": "7.41e",
+      "data_quality": "migrated_mvp"
+    },
+    "Phantom Assassin": {
+      "lane": {
+        "last_hit": 0.0,
+        "deny": 0.0,
+        "harass": 0.0,
+        "trade": 0.0,
+        "kill_pressure": 0.0,
+        "survivability": 0.0,
+        "sustain": 0.0,
+        "wave_clear": 0.0,
+        "range_advantage": 0.0,
+        "level_2_spike": 0.0,
+        "level_3_spike": 0.0,
+        "level_6_spike": 0.0
+      },
+      "mid_game": 1,
+      "late_game": -1,
+      "lane_aggregate": 0,
+      "patch": "7.41e",
+      "data_quality": "migrated_mvp"
+    }
+  },
+  "Lifestealer": {
+    "Axe": {
+      "lane": {
+        "last_hit": 0.55,
+        "deny": 0.35,
+        "harass": 0.85,
+        "trade": 0.9,
+        "kill_pressure": 0.75,
+        "survivability": 0.55,
+        "sustain": 0.4,
+        "wave_clear": 0.25,
+        "range_advantage": 0.3,
+        "level_2_spike": 0.35,
+        "level_3_spike": 0.5,
+        "level_6_spike": 0.6
+      },
+      "mid_game": 2,
+      "late_game": 1,
+      "lane_aggregate": 1,
+      "patch": "7.41e",
+      "data_quality": "migrated_mvp"
+    },
+    "Lion": {
+      "lane": {
+        "last_hit": 1.1,
+        "deny": 0.7,
+        "harass": 1.7,
+        "trade": 1.8,
+        "kill_pressure": 1.5,
+        "survivability": 1.1,
+        "sustain": 0.8,
+        "wave_clear": 0.5,
+        "range_advantage": 0.6,
+        "level_2_spike": 0.7,
+        "level_3_spike": 1.0,
+        "level_6_spike": 1.2
+      },
+      "mid_game": 2,
+      "late_game": 1,
+      "lane_aggregate": 2,
+      "patch": "7.41e",
+      "data_quality": "migrated_mvp"
+    },
+    "Phantom Assassin": {
+      "lane": {
+        "last_hit": 0.55,
+        "deny": 0.35,
+        "harass": 0.85,
+        "trade": 0.9,
+        "kill_pressure": 0.75,
+        "survivability": 0.55,
+        "sustain": 0.4,
+        "wave_clear": 0.25,
+        "range_advantage": 0.3,
+        "level_2_spike": 0.35,
+        "level_3_spike": 0.5,
+        "level_6_spike": 0.6
+      },
+      "mid_game": 1,
+      "late_game": 0,
+      "lane_aggregate": 1,
+      "patch": "7.41e",
+      "data_quality": "migrated_mvp"
+    }
+  },
+  "Slark": {
+    "Axe": {
+      "lane": {
+        "last_hit": -1.1,
+        "deny": -0.7,
+        "harass": -1.7,
+        "trade": -1.8,
+        "kill_pressure": -1.5,
+        "survivability": -1.1,
+        "sustain": -0.8,
+        "wave_clear": -0.5,
+        "range_advantage": -0.6,
+        "level_2_spike": -0.7,
+        "level_3_spike": -1.0,
+        "level_6_spike": -1.2
+      },
+      "mid_game": -1,
+      "late_game": 1,
+      "lane_aggregate": -2,
+      "patch": "7.41e",
+      "data_quality": "migrated_mvp"
+    },
+    "Lion": {
+      "lane": {
+        "last_hit": -1.1,
+        "deny": -0.7,
+        "harass": -1.7,
+        "trade": -1.8,
+        "kill_pressure": -1.5,
+        "survivability": -1.1,
+        "sustain": -0.8,
+        "wave_clear": -0.5,
+        "range_advantage": -0.6,
+        "level_2_spike": -0.7,
+        "level_3_spike": -1.0,
+        "level_6_spike": -1.2
+      },
+      "mid_game": -1,
+      "late_game": 1,
+      "lane_aggregate": -2,
+      "patch": "7.41e",
+      "data_quality": "migrated_mvp"
+    },
+    "Phantom Assassin": {
+      "lane": {
+        "last_hit": 0.55,
+        "deny": 0.35,
+        "harass": 0.85,
+        "trade": 0.9,
+        "kill_pressure": 0.75,
+        "survivability": 0.55,
+        "sustain": 0.4,
+        "wave_clear": 0.25,
+        "range_advantage": 0.3,
+        "level_2_spike": 0.35,
+        "level_3_spike": 0.5,
+        "level_6_spike": 0.6
+      },
+      "mid_game": 1,
+      "late_game": 1,
+      "lane_aggregate": 1,
+      "patch": "7.41e",
+      "data_quality": "migrated_mvp"
+    }
+  },
+  "Viper": {
+    "Phantom Assassin": {
+      "patch": "7.41e",
+      "data_quality": "curated_mvp",
+      "lane": {
+        "last_hit": 1.0,
+        "deny": 1.0,
+        "harass": 3.0,
+        "trade": 3.0,
+        "kill_pressure": 2.0,
+        "survivability": 1.0,
+        "sustain": 0.5,
+        "wave_clear": 1.0,
+        "range_advantage": 3.0,
+        "level_2_spike": 2.0,
+        "level_3_spike": 2.5,
+        "level_6_spike": 2.0
+      },
+      "mid_game": 2,
+      "late_game": 1,
+      "reasons": [
+        "ranged lane pressure",
+        "break/anti-carry interaction",
+        "strong anti-melee trading"
+      ]
+    }
+  },
+  "Mars": {
+    "Phantom Assassin": {
+      "patch": "7.41e",
+      "data_quality": "curated_mvp",
+      "lane": {
+        "last_hit": 0.55,
+        "deny": 0.35,
+        "harass": 0.85,
+        "trade": 0.9,
+        "kill_pressure": 0.75,
+        "survivability": 0.55,
+        "sustain": 0.4,
+        "wave_clear": 0.25,
+        "range_advantage": 0.3,
+        "level_2_spike": 0.35,
+        "level_3_spike": 0.5,
+        "level_6_spike": 0.6
+      },
+      "mid_game": 1,
+      "late_game": 0,
+      "reasons": [
+        "reliable control",
+        "frontline against physical carry"
+      ]
+    }
+  }
+}

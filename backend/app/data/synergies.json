@@ -1,0 +1,68 @@
+{
+  "Ursa": {
+    "Lich": {
+      "lane": 3,
+      "teamfight": 1,
+      "save": 1
+    },
+    "Vengeful Spirit": {
+      "lane": 2,
+      "follow_up": 2,
+      "physical_synergy": 2
+    }
+  },
+  "Juggernaut": {
+    "Lich": {
+      "lane": 2,
+      "teamfight": 1
+    },
+    "Vengeful Spirit": {
+      "lane": 1,
+      "physical_synergy": 2
+    }
+  },
+  "Lifestealer": {
+    "Lich": {
+      "lane": 2,
+      "save": 1
+    },
+    "Vengeful Spirit": {
+      "follow_up": 2,
+      "initiation": 1
+    }
+  },
+  "Slark": {
+    "Lich": {
+      "lane": 1,
+      "save": 2
+    },
+    "Vengeful Spirit": {
+      "initiation": 2,
+      "follow_up": 2
+    }
+  },
+  "Faceless Void": {
+    "Witch Doctor": {
+      "combo_damage": 3,
+      "combo_control": 2,
+      "save": 0,
+      "initiation": 1,
+      "follow_up": 3,
+      "mobility": 0,
+      "lane_synergy": 0,
+      "teamfight_synergy": 3
+    }
+  },
+  "Mars": {
+    "Phoenix": {
+      "combo_damage": 3,
+      "combo_control": 3,
+      "save": 1,
+      "initiation": 3,
+      "follow_up": 3,
+      "mobility": 0,
+      "lane_synergy": 1,
+      "teamfight_synergy": 3
+    }
+  }
+}

@@ -1,16 +1,33 @@
 import HeroCard from "./HeroCard";
 
+const positions = [
+    ["pos1", "POS 1"],
+    ["pos2", "POS 2"],
+    ["pos3", "POS 3"],
+    ["pos4", "POS 4"],
+    ["pos5", "POS 5"],
+];
+
 export default function Team({
     title,
     heroes,
     onRemove,
-    enemy = false,
+    side = "own",
     maxHeroes,
 }) {
-    const slots = Array.from(
-        { length: maxHeroes },
-        (_, index) => heroes[index] ?? null
-    );
+    const enemy = side === "enemy";
+    const count = Object.values(heroes).filter(Boolean).length;
+    const occupiedPositions = positions.filter(([role]) => heroes[role]);
+    const emptyPositions = positions
+        .filter(([role]) => !heroes[role])
+        .slice(0, Math.max(0, maxHeroes - count));
+    const visiblePositions = (enemy
+        ? positions
+        : [...occupiedPositions, ...emptyPositions].sort(
+            ([roleA], [roleB]) =>
+                positions.findIndex(([role]) => role === roleA)
+                - positions.findIndex(([role]) => role === roleB)
+        ));
 
     return (
         <section
@@ -22,7 +39,7 @@ export default function Team({
                 ${
                     enemy
                         ? "border-red-500/50 bg-red-950/[0.08]"
-                        : "border-blue-500/50 bg-blue-950/[0.08]"
+                        : "border-emerald-500/40 bg-emerald-950/[0.10]"
                 }
                 p-3
                 shadow-2xl
@@ -41,7 +58,7 @@ export default function Team({
                     ${
                         enemy
                             ? "-left-20 bg-red-500/10"
-                            : "-right-20 bg-blue-500/10"
+                            : "-right-20 bg-emerald-500/10"
                     }
                     h-40
                     w-40
@@ -63,7 +80,7 @@ export default function Team({
                             ${
                                 enemy
                                     ? "bg-red-500/10 text-red-400"
-                                    : "bg-blue-500/10 text-blue-400"
+                                    : "bg-emerald-500/10 text-emerald-300"
                             }
                         `}
                     >
@@ -78,7 +95,7 @@ export default function Team({
                         <p className="text-[9px] text-slate-600">
                             {enemy
                                 ? "Opposing lineup"
-                                : "Your lineup"}
+                                : "Four picks · fifth is your recommendation"}
                         </p>
                     </div>
                 </div>
@@ -90,11 +107,11 @@ export default function Team({
                         ${
                             enemy
                                 ? "text-red-400"
-                                : "text-blue-400"
+                                : "text-emerald-300"
                         }
                     `}
                 >
-                    {heroes.length} / {maxHeroes}
+                    {count} / {maxHeroes}
                 </span>
             </div>
 
@@ -104,25 +121,33 @@ export default function Team({
                     grid
                     gap-1.5
                     sm:gap-2
-                    ${
-                        maxHeroes === 4
-                            ? "grid-cols-4"
-                            : "grid-cols-5"
-                    }
+                    grid-cols-6
                 `}
             >
-                {slots.map((hero, index) => (
-                    <HeroCard
-                        key={`${hero ?? "empty"}-${index}`}
-                        hero={hero}
-                        enemy={enemy}
-                        onRemove={
-                            hero
-                                ? onRemove
-                                : undefined
-                        }
-                    />
-                ))}
+                {visiblePositions.map(([role, label], index) => {
+                    const hero = heroes[role];
+                    const rowAlignment = enemy
+                        ? index === 3
+                            ? "col-start-2"
+                            : index === 4
+                                ? "col-start-4"
+                                : ""
+                        : index === 3
+                            ? "col-start-3"
+                            : "";
+                    return (
+                        <div key={role} className={`col-span-2 min-w-0 ${rowAlignment}`}>
+                            <p className="mb-1 text-center text-[8px] font-bold tracking-wide text-slate-500 sm:text-[9px]">
+                                {label}
+                            </p>
+                            <HeroCard
+                                hero={hero}
+                                enemy={enemy}
+                                onRemove={hero ? onRemove : undefined}
+                            />
+                        </div>
+                    );
+                })}
             </div>
         </section>
     );

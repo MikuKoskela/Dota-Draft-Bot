@@ -1,0 +1,95 @@
+{
+  "rules": [
+    {
+      "candidate_tag": "break",
+      "enemy_tag": "evasion",
+      "effect": "counter",
+      "value": 1.4,
+      "reason": "break vs evasion"
+    },
+    {
+      "candidate_tag": "hard_disable",
+      "enemy_tag": "mobility",
+      "effect": "counter",
+      "value": 1.0,
+      "reason": "reliable control vs mobility"
+    },
+    {
+      "candidate_tag": "anti_tank",
+      "enemy_tag": "frontline",
+      "effect": "counter",
+      "value": 1.2,
+      "reason": "anti-tank vs frontline"
+    },
+    {
+      "candidate_tag": "anti_regeneration",
+      "enemy_tag": "sustain",
+      "effect": "counter",
+      "value": 1.3,
+      "reason": "anti-regeneration vs sustain"
+    },
+    {
+      "candidate_tag": "magic_damage",
+      "enemy_weakness": "magic_damage",
+      "effect": "counter",
+      "value": 1.0,
+      "reason": "magic damage exploits weakness"
+    },
+    {
+      "candidate_tag": "physical_damage",
+      "enemy_weakness": "physical_burst",
+      "effect": "counter",
+      "value": 0.8,
+      "reason": "physical damage exploits low physical durability"
+    },
+    {
+      "candidate_weakness": "hard_disable",
+      "enemy_tag": "hard_disable",
+      "effect": "risk",
+      "value": 1.0,
+      "reason": "candidate vulnerable to hard disable"
+    },
+    {
+      "candidate_weakness": "kiting",
+      "enemy_tag": "ranged",
+      "effect": "risk",
+      "value": 0.8,
+      "reason": "candidate vulnerable to kiting/range"
+    },
+    {
+      "candidate_weakness": "burst",
+      "enemy_tag": "burst",
+      "effect": "risk",
+      "value": 0.8,
+      "reason": "candidate vulnerable to burst"
+    },
+    {
+      "candidate_tag": "teamfight",
+      "ally_tag": "teamfight",
+      "effect": "synergy",
+      "value": 0.4,
+      "reason": "shared teamfight game plan"
+    },
+    {
+      "candidate_tag": "follow_up",
+      "ally_tag": "initiation",
+      "effect": "synergy",
+      "value": 0.8,
+      "reason": "follow-up complements initiation"
+    },
+    {
+      "candidate_tag": "physical_damage",
+      "ally_tag": "physical_amplification",
+      "effect": "synergy",
+      "value": 1.0,
+      "reason": "physical amplification synergy"
+    },
+    {
+      "candidate_tag": "carry",
+      "ally_tag": "save",
+      "effect": "synergy",
+      "value": 0.5,
+      "reason": "save supports carry execution"
+    }
+  ]
+}

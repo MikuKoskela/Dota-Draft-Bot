@@ -1,0 +1,10 @@
+{
+  "base_profile_source": "dota-draft-bot-v0.6",
+  "dotaconstants_commit": "e7705ee975ebec2a88a59a7b455d4cae5dc69ca1",
+  "dotaconstants_commit_date": "2026-07-28T23:06:33Z",
+  "generated_by": "scripts/build_hero_profiles.py",
+  "hero_count": 127,
+  "heuristic_notice": "Tag and weakness weights are deterministic heuristics, not measured win rates.",
+  "legacy_profile_source": "Dota_Draft_Assistant_v0.9.py",
+  "schema_version": "hero-map-v2"
+}
